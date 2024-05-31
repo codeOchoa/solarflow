@@ -1,2 +1,2 @@
 # Coderhouse
-Actividades Coderhouse
+Coderhouse Labs
