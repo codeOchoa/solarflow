@@ -3,19 +3,19 @@ Coderhouse Labs
 
 Proyecto Mindset Digital
 
-Propuesta de Negocio: EcoEnergy Solutions
+Propuesta de Negocio: GreenPower Solutions
 Descripción de la propuesta de negocio:
-EcoEnergy Solutions es una empresa dedicada a la instalación y mantenimiento de sistemas de energía solar para hogares y pequeñas empresas. Fundada hace 7 años, la compañía ha instalado más de 1,500 sistemas solares en diversas localidades, ofreciendo soluciones sostenibles y económicas para la generación de energía. Actualmente, la empresa cuenta con un equipo de 50 técnicos y 10 asesores energéticos que atienden a clientes en la región metropolitana de Santiago de Chile.
+GreenPower Solutions es una empresa dedicada a la instalación y mantenimiento de sistemas de energía solar para hogares y pequeñas empresas. Fundada hace 7 años, la compañía ha instalado más de 1,500 sistemas solares en diversas localidades, ofreciendo soluciones sostenibles y económicas para la generación de energía. Actualmente, la empresa cuenta con un equipo de 50 técnicos y 10 asesores energéticos que atienden a clientes en la región metropolitana de Santiago de Chile.
 
 Oportunidad de negocio y problemas actuales:
-EcoEnergy Solutions ha identificado la necesidad de mejorar sus procesos operativos y la experiencia del cliente para poder expandir su presencia en el mercado y aumentar la adopción de sistemas de energía solar. Los principales desafíos incluyen:
+GreenPower Solutions ha identificado la necesidad de mejorar sus procesos operativos y la experiencia del cliente para poder expandir su presencia en el mercado y aumentar la adopción de sistemas de energía solar. Los principales desafíos incluyen:
 
 Proceso de Instalación Manual: La gestión de proyectos y la coordinación de instalaciones se realizan de manera manual, lo que provoca demoras y falta de eficiencia.
 Falta de Monitoreo Remoto: Los clientes no tienen acceso a datos en tiempo real sobre el rendimiento de sus sistemas solares, lo que dificulta la optimización del consumo energético.
 Atención al Cliente: La comunicación con los clientes, desde la primera consulta hasta el mantenimiento post-instalación, se maneja de manera fragmentada, lo que afecta la calidad del servicio.
 Documentación Física: Gran parte de la documentación, como contratos y manuales de usuario, se maneja en formato papel, lo que genera costos y no es sostenible.
 Propuesta:
-EcoEnergy Solutions propone implementar un enfoque digitalizado para transformar su modelo de negocio y mejorar tanto sus operaciones internas como la experiencia del cliente. Las acciones propuestas incluyen:
+GreenPower Solutions propone implementar un enfoque digitalizado para transformar su modelo de negocio y mejorar tanto sus operaciones internas como la experiencia del cliente. Las acciones propuestas incluyen:
 
 Digitalización de Procesos:
 
@@ -39,11 +39,11 @@ Eficiencia Operativa: Reducción de tiempos de instalación y mejora en la coord
 Mejora en la Satisfacción del Cliente: Acceso a información en tiempo real y soporte técnico eficiente, aumentando la confianza y satisfacción del cliente.
 Optimización del Consumo Energético: Monitoreo en tiempo real y optimización del rendimiento de los sistemas solares, permitiendo a los clientes maximizar sus ahorros energéticos.
 Sostenibilidad: Reducción del uso de papel y adopción de prácticas sostenibles, mejorando la imagen ecológica de la empresa.
-EcoEnergy Solutions, con esta transformación digital, no solo mejorará su eficiencia operativa y la experiencia del cliente, sino que también estará mejor posicionada para expandirse y liderar el mercado de energía solar, contribuyendo a un futuro más sostenible.
+GreenPower Solutions, con esta transformación digital, no solo mejorará su eficiencia operativa y la experiencia del cliente, sino que también estará mejor posicionada para expandirse y liderar el mercado de energía solar, contribuyendo a un futuro más sostenible.
 
 Datos adicionales:
 
-Al evaluar la propuesta EcoEnergy Solutions en términos de costo y tiempo de implementación para digitalizar y automatizar los servicios, podemos considerar varios factores, incluyendo la complejidad de los sistemas a implementar, la necesidad de hardware adicional, la infraestructura actual de la empresa y la cantidad de personal que necesitará.
+Al evaluar la propuesta GreenPower Solutions en términos de costo y tiempo de implementación para digitalizar y automatizar los servicios, podemos considerar varios factores, incluyendo la complejidad de los sistemas a implementar, la necesidad de hardware adicional, la infraestructura actual de la empresa y la cantidad de personal que necesitará.
 
 -Descripción: Transformación digital para la instalación y mantenimiento de sistemas de energía solar.
 -Digitalización Necesaria: Plataforma de gestión de proyectos, sistema CRM, monitoreo remoto con IoT, aplicación móvil.
