@@ -1,16 +1,15 @@
-# Coderhouse Labs
-![GreenPower Solutions](./assets/img/logoGreenPower_Solutions.png)
+![SolarFlow](./assets/img/logoSolarFlow.png)
 
 ## **Proyecto Mindset Digital**<br>
 
 ## **Propuesta de Negocio:**<br>
 
-# **GreenPower Solutions**<br>
+# **SolarFlow**<br>
 
-GreenPower Solutions es una empresa dedicada a la instalación y mantenimiento de sistemas de energía solar para hogares y pequeñas empresas. Fundada hace 7 años, la compañía ha instalado más de 1,500 sistemas solares en diversas localidades, ofreciendo soluciones sostenibles y económicas para la generación de energía. Actualmente, la empresa cuenta con un equipo de 50 técnicos y 10 asesores energéticos que atienden a clientes en la región metropolitana de Santiago de Chile.<br>
+SolarFlow es una empresa dedicada a la instalación y mantenimiento de sistemas de energía solar para hogares y pequeñas empresas. Fundada hace 7 años, la compañía ha instalado más de 1,500 sistemas solares en diversas localidades, ofreciendo soluciones sostenibles y económicas para la generación de energía. Actualmente, la empresa cuenta con un equipo de 50 técnicos y 10 asesores energéticos que atienden a clientes en la región metropolitana de Santiago de Chile.<br>
 
 ### **Oportunidad de negocio y problemas actuales:**<br>
-GreenPower Solutions ha identificado la necesidad de mejorar sus procesos operativos y la experiencia del cliente para poder expandir su presencia en el mercado y aumentar la adopción de sistemas de energía solar. Los principales desafíos incluyen:<br>
+SolarFlow ha identificado la necesidad de mejorar sus procesos operativos y la experiencia del cliente para poder expandir su presencia en el mercado y aumentar la adopción de sistemas de energía solar. Los principales desafíos incluyen:<br>
 
 -Proceso de Instalación Manual: La gestión de proyectos y la coordinación de instalaciones se realizan de manera manual, lo que provoca demoras y falta de eficiencia.<br>
 -Falta de Monitoreo Remoto: Los clientes no tienen acceso a datos en tiempo real sobre el rendimiento de sus sistemas solares, lo que dificulta la optimización del consumo energético.<br>
@@ -18,7 +17,7 @@ GreenPower Solutions ha identificado la necesidad de mejorar sus procesos operat
 -Documentación Física: Gran parte de la documentación, como contratos y manuales de usuario, se maneja en formato papel, lo que genera costos y no es sostenible.<br>
 
 ### **Propuesta:**<br>
-GreenPower Solutions propone implementar un enfoque digitalizado para transformar su modelo de negocio y mejorar tanto sus operaciones internas como la experiencia del cliente. Las acciones propuestas incluyen:<br>
+SolarFlow propone implementar un enfoque digitalizado para transformar su modelo de negocio y mejorar tanto sus operaciones internas como la experiencia del cliente. Las acciones propuestas incluyen:<br>
 
 -Digitalización de Procesos:<br>
 Desarrollar una plataforma en línea para la gestión integral de proyectos, que permita a los técnicos y gerentes de proyectos coordinar y supervisar las instalaciones de manera más eficiente.<br>
@@ -39,11 +38,11 @@ Facilitar la firma electrónica de contratos y la entrega digital de manuales y 
 -Optimización del Consumo Energético: Monitoreo en tiempo real y optimización del rendimiento de los sistemas solares, permitiendo a los clientes maximizar sus ahorros energéticos.<br>
 -Sostenibilidad: Reducción del uso de papel y adopción de prácticas sostenibles, mejorando la imagen ecológica de la empresa.<br>
 
-GreenPower Solutions, con esta transformación digital, no solo mejorará su eficiencia operativa y la experiencia del cliente, sino que también estará mejor posicionada para expandirse y liderar el mercado de energía solar, contribuyendo a un futuro más sostenible.<br>
+SolarFlow, con esta transformación digital, no solo mejorará su eficiencia operativa y la experiencia del cliente, sino que también estará mejor posicionada para expandirse y liderar el mercado de energía solar, contribuyendo a un futuro más sostenible.<br>
 
 ### **Datos adicionales:**<br>
 
-Al evaluar la propuesta GreenPower Solutions en términos de costo y tiempo de implementación para digitalizar y automatizar los servicios, podemos considerar varios factores, incluyendo la complejidad de los sistemas a implementar, la necesidad de hardware adicional, la infraestructura actual de la empresa y la cantidad de personal que necesitará.<br>
+Al evaluar la propuesta SolarFlow en términos de costo y tiempo de implementación para digitalizar y automatizar los servicios, podemos considerar varios factores, incluyendo la complejidad de los sistemas a implementar, la necesidad de hardware adicional, la infraestructura actual de la empresa y la cantidad de personal que necesitará.<br>
 
 -Descripción: Transformación digital para la instalación y mantenimiento de sistemas de energía solar.<br>
 -Digitalización Necesaria: Plataforma de gestión de proyectos, sistema CRM, monitoreo remoto con IoT, aplicación móvil.<br>
@@ -59,16 +58,17 @@ Al evaluar la propuesta GreenPower Solutions en términos de costo y tiempo de i
 -Incentivos Gubernamentales: Muchos gobiernos ofrecen incentivos para la instalación de sistemas de energía solar, lo que puede impulsar la demanda.<br>
 -Ahorro a Largo Plazo: Los clientes son atraídos por el ahorro en costos de energía a largo plazo y la reducción de la dependencia de fuentes de energía no renovables.<br>
 
-### **GreenPower Solutions parece fácil de recordar y atractivo. Aquí algunas razones:**<br>
+### **SolarFlow parece fácil de recordar y atractivo. Aquí algunas razones:**<br>
 
 -Simplicidad y Claridad: El nombre es claro y sencillo, transmitiendo inmediatamente el enfoque en la energía sostenible (GreenPower).<br>
 -Asociación Positiva: Las palabras "Green" y "Power" tienen connotaciones positivas y ecológicas, lo que puede resonar bien con los clientes que buscan soluciones sostenibles.<br>
 -Sonoridad: El nombre tiene una buena sonoridad y es fácil de pronunciar, lo que facilita que los clientes lo recuerden.<br>
 -Versatilidad: Es un nombre versátil que puede adaptarse bien a diversas estrategias de marketing y branding.<br>
-Por estas razones, GreenPower Solutions sería una opción atractiva y memorable para la empresa.<br>
+Por estas razones, SolarFlow sería una opción atractiva y memorable para la empresa.<br>
 
 **Fuente:**<br>
 
 https://www.greenpowersol.com/<br>
 https://greenpowersolutions.com.au/<br>
+https://eu.zendure.com/products/solarflow<br>
 https://chatgpt.com/<br>
