@@ -5,37 +5,34 @@
     font-style: normal;
 }
 
-/* Estilos generales que se aplican a ambos modos */
+/* Paleta de colores:
+#52736E
+#FFD682
+#F4F4F4
+#121212 */
+
 body {
     font-family: Josefin Sans, sans-serif;
     margin: 0;
     padding: 0;
   }
   
-  /* Estilos para el modo claro */
   @media (prefers-color-scheme: light) {
     body {
-      background-color: white;
-      color: black;
+      background-color: #F4F4F4;
+      color: #121212;
     }
-  
     header {
-      background-color: lightgray;
-    }
-  
-    /* Otros estilos para el modo claro */
+      background-color: #F4F4F4;
+    }  
   }
   
-  /* Estilos para el modo oscuro */
   @media (prefers-color-scheme: dark) {
     body {
-      background-color: black;
-      color: white;
-    }
-  
+      background-color: #121212;
+      color: #F4F4F4;
+    }  
     header {
       background-color: darkgray;
-    }
-  
-    /* Otros estilos para el modo oscuro */
+    }  
   }
