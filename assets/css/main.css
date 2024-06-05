@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Josefin Sans";
     src: url("../fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
-    font-weight: 200;
+    font-weight: 300;
     font-style: normal;
 }
 
@@ -50,26 +50,3 @@ body {
     width: 40%;
     height: auto;
   }
-
-
-
-  /* Estilos generales */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
-}
-
-/* Modo Claro por Defecto */
-body {
-  background-color: #F4F4F4;
-  color: #121212;
-}
-
-/* Modo Oscuro */
-@media (prefers-color-scheme: dark) {
-  body {
-      background-color: #121212;
-      color: #F4F4F4;
-  }
-}
