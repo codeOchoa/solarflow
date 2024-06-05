@@ -6,13 +6,14 @@
 }
 
 /* Paleta de colores:
-#52736E
-#FFD682
-#F4F4F4
-#121212 */
+#52736E Verde
+#FFD682 Amarillo
+#F4F4F4 Blanco
+#121212 Negro*/
 
 body {
     font-family: Josefin Sans, sans-serif;
+    font-size: 1rem;
     margin: 0;
     padding: 0;
   }
@@ -23,7 +24,7 @@ body {
       color: #121212;
     }
     header {
-      background-color: #F4F4F4;
+      background-color: #52736E;
     }  
   }
   
@@ -33,6 +34,42 @@ body {
       color: #F4F4F4;
     }  
     header {
-      background-color: darkgray;
+      background-color: #52736E;
     }  
   }
+
+  .includes-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh;
+  }
+
+  .includes-header-img {
+    width: 40%;
+    height: auto;
+  }
+
+
+
+  /* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Modo Claro por Defecto */
+body {
+  background-color: #F4F4F4;
+  color: #121212;
+}
+
+/* Modo Oscuro */
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: #121212;
+      color: #F4F4F4;
+  }
+}
