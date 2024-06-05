@@ -58,7 +58,7 @@ Al evaluar la propuesta SolarFlow en términos de costo y tiempo de implementaci
 -Incentivos Gubernamentales: Muchos gobiernos ofrecen incentivos para la instalación de sistemas de energía solar, lo que puede impulsar la demanda.<br>
 -Ahorro a Largo Plazo: Los clientes son atraídos por el ahorro en costos de energía a largo plazo y la reducción de la dependencia de fuentes de energía no renovables.<br>
 
-### **SolarFlow parece fácil de recordar y atractivo. Aquí algunas razones:**<br>
+### **SolarFlow es fácil de recordar y atractivo. Aquí algunas razones:**<br>
 
 -Simplicidad y Claridad: El nombre es claro y sencillo, transmitiendo inmediatamente el enfoque en la energía sostenible (GreenPower).<br>
 -Asociación Positiva: Las palabras "Green" y "Power" tienen connotaciones positivas y ecológicas, lo que puede resonar bien con los clientes que buscan soluciones sostenibles.<br>
