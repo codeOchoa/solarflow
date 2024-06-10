@@ -51,24 +51,39 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0,1);
   }
 
-  /* .includes-header-title {
+  .includes-header-div {
     display: flex;
-  } */
+    flex-direction: column;
+    width: 25%;
+  }
 
-  /* .includes-header-text-1 {
-    display: flex;
-  } */
+  .includes-header-title {
+    padding: 10px;
+    font-size: 4rem;
+  }
 
-  /* .includes-header-text-button {
-    display: flex;
-  } */
+  .includes-header-text-1 {
+    padding: 10px;
+    font-size: 1rem;
+  }
 
-  /* .includes-header-a-img {
-    display: flex;
-  } */
+  .includes-header-text-button {
+    color: #F4F4F4;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 2rem;
+  }
+
+  .includes-header-a-img {
+    padding: 10px;
+    width: 7%;
+    height: auto;
+  }
 
   .includes-header-img {
-    width: 40%;
+    flex: 1;
+    margin-left: 20px;
+    width: 100%;
     height: auto;
   }
 
