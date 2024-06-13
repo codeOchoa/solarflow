@@ -18,139 +18,155 @@
     <title>SolarFlow</title>
 </head>
 <body class="index-body">
-    <div id="nav"></div>
-    <script>
-        fetch("./includes/nav.html")
-        .then(response => response.text())
-        .then(data => document.getElementById("nav").innerHTML = data);
-    </script>
-    <div id="header"></div>
-    <script>
-        fetch("./includes/header.html")
-        .then(response => response.text())
-        .then(data => document.getElementById("header").innerHTML = data);
-    </script>
-
-    <!-- <script>
-        function loadNav() {
-            fetch('nav.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('nav-placeholder').innerHTML = data;
-                })
-                .catch(error => console.error('Error cargando la navegación:', error));
-        }
-        window.onload = loadNav;
-    </script> -->
-
-    <article class="index-article">
-        <section class="index-first-section">
-            <h2 class="index-first-section-title">We are help you to brighter tomorrow</h2>
-            <p class="index-first-section-text">Leverage clean energy to build your business into an enterprise behemoth. A green future beckons.</p>
-            <div>
-                <p class="index-first-section-text-button">Know More</p>
-                <a href="http://#.com/" target="_self"><img class="index-first-section-button" src="./assets/icons/north_east.svg" alt="Go"></a>
-            </div>
-        </section>
-        <section class="index-second-section">
-            <h3 class="index-second-section-title">We Delivered Till Now</h3>
-            <div class="index-second-section-div-1">
-                <p class="index-second-section-text-1">1270</p>
-                <p class="index-second-section-test-2">Wind Turbine Installed</p>
-            </div>
-            <div class="index-second-section-div-1">
-                <p class="index-second-section-text-1">1060</p>
-                <p class="index-second-section-test-2">Hectare Area Covered</p>
-            </div>
-            <div class="index-second-section-div-1">
-                <p class="index-second-section-text-1">4890</p>
-                <p class="index-second-section-test-2">Solar Panel Installed</p>
-            </div>
-            <div class="index-second-section-div-2">
-                <p class="index-second-section-text-1">12</p>
-                <p class="index-second-section-test-2">Year's Of Experience</p>
-            </div>
-            <img class="index-second-section-img" src="./assets/images/image01.jpeg" alt="Sample">
-        </section>
-        <section class="index-third-section">
-            <h2 class="index-third-section-title">We are committed generate a sustainable green energy to everywhere...</h2>
-            <div class="index-third-section-div">
-                <a href="http://#/" target="_self"><img class="index-third-section-button" src="./assets/icons/north_east.svg" alt="Go"></a>
-                <h3 class="index-third-section-subtitle">Wind Turbines</h3>
-                <p class="index-third-section-text">With acres of high-power wind turbines, you can now access a trove of clean renewable energy with 0% carbon emissions.</p>
-                <img class="index-third-section-img-1" src="./assets/images/image02.jpeg" alt="Sample">
-                <img class="index-third-section-img-2" src="./assets/images/image03.jpeg" alt="Sample">
-            </div>
-            <div class="index-third-section-div">
-                <a href="http://#/" target="_self"><img class="index-third-section-button" src="./assets/icons/north_east.svg" alt="Go"></a>
-                <h3 class="index-third-section-subtitle">Solar Panels</h3>
-                <p class="index-third-section-text">Rest easy with solar-power, the torch-bearer of renewable, green energy. From domestic to business use-cases, solar energy is the way to go.</p>
-                <img class="index-third-section-img-1" src="./assets/images/image04.jpeg" alt="Sample">
-                <img class="index-third-section-img-2" src="./assets/images/image05.jpeg" alt="Sample">
-            </div>
-        </section>
-        <section class="index-fourth-section">
-            <img class="index-fourth-section-img" src="./assets/images/image06.jpg" alt="Sample">
-            <h2 class="index-fourth-section-title">We are generate green energy that's good for world & your wallet also.</h2>
-            <p class="index-fourth-section-text">Step up to the advantages of clean energy with SolarFlow, the worl'd leading green and renewable energy company.</p>
-        </section>
-        <section class="index-fifth-section">
-            <div class="index-fifth-section-div">
-                <h2 class="index-fifth-section-title">Solar Farm, NYC Park California</h2>
-                <div class="index-fifth-section-subdiv">
-                    <h4 class="index-fifth-section-title-subtitle">52MW</h4>
-                    <p class="index-fifth-section-text-1">Capacity</p>
+    <header class="index-header">
+        <div id="nav"></div>
+        <script>
+            fetch("./includes/nav.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("nav").innerHTML = data);
+        </script>
+        <!-- <div id="nav"></div>
+        <script>
+            function loadHeader() {
+                fetch('./includes/nav.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('nav').innerHTML = data;
+                    })
+                    .catch(error => console.error('Error loading navigation bar:', error));
+            }
+            window.onload = loadHeader;
+        </script> -->
+        <div id="header"></div>
+        <script>
+            fetch("./includes/header.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+        </script>
+        <!-- <div id="header"></div>
+        <script>
+            function loadHeader() {
+                fetch('./includes/header.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('header').innerHTML = data;
+                    })
+                    .catch(error => console.error('Error loading header:', error));
+            }
+            window.onload = loadHeader;
+        </script> -->
+    </header>
+    <main class="index-main">
+        <article class="index-main-article">
+            <div class="index-main-article-div1">
+                <h2>We are help you to brighter tomorrow</h2>
+                <div class="index-main-article-div1-div1">
+                    <p>Leverage clean energy to build your business into an enterprise behemoth. A green future beckons.</p>
+                    <a href="./index.html" target="_self">Know More<img class="index-main-article-div1-div1-svg" src="./assets/icons/north_east.svg" alt="Go"></a>
                 </div>
-                <div class="index-fifth-section-subdiv">
-                    <h4 class="index-fifth-section-title-subtitle">90HE</h4>
-                    <p class="index-fifth-section-text-1">Total. area</p>
+                <div class="index-main-article-div1-div2">
+                    <h3>We Delivered Till Now</h3>
+                    <div class="index-main-article-div1-div2-div1">
+                        <h3>1270</p>
+                        <p>Wind Turbine Installed</p>
+                    </div>
+                    <div class="index-main-article-div1-div2-div1">
+                        <h3>1060</p>
+                        <p>Hectare Area Covered</p>
+                    </div>
+                    <div class="index-main-article-div1-div2-div1">
+                        <h3>4890</p>
+                        <p>Solar Panel Installed</p>
+                    </div>
+                    <div class="index-main-article-div1-div2-div2">
+                        <h3>12</p>
+                        <p>Year's Of Experience</p>
+                    </div>
+                    <img class="index-main-article-div1-div2-img" src="./assets/images/image01.jpeg" alt="Sample">
                 </div>
-                <div class="index-fifth-section-subdiv">
-                    <h4 class="index-fifth-section-title-subtitle">2022</h4>
-                    <p class="index-fifth-section-text-1">Build</p>
+            </div>
+            <div class="index-main-article-div2">
+                <div class="index-main-article-div2-div">
+                    <h2>We are committed generate a sustainable green energy to everywhere...</h2>
+                    <div class="index-main-article-div2-div-div1">
+                        <a href="./index.html" target="_self"><img class="index-main-article-div2-div-div1-svg" src="./assets/icons/north_east.svg" alt="Go"></a>
+                        <h3>Wind Turbines</h3>
+                        <p>With acres of high-power wind turbines, you can now access a trove of clean renewable energy with 0% carbon emissions.</p>
+                        <img class="index-main-article-div2-div-div1-img1" src="./assets/images/image02.jpeg" alt="Sample">
+                        <img class="index-main-article-div2-div-div1-img2" src="./assets/images/image03.jpeg" alt="Sample">
+                    </div>
+                    <div class="index-main-article-div2-div-div2">
+                        <a href="./index.html" target="_self"><img class="index-main-article-div2-div-div1-svg" src="./assets/icons/north_east.svg" alt="Go"></a>
+                        <h3>Solar Panels</h3>
+                        <p>Rest easy with solar-power, the torch-bearer of renewable, green energy. From domestic to business use-cases, solar energy is the way to go.</p>
+                        <img class="index-main-article-div2-div-div1-img1" src="./assets/images/image04.jpeg" alt="Sample">
+                        <img class="index-main-article-div2-div-div1-img2" src="./assets/images/image05.jpeg" alt="Sample">
+                    </div>
                 </div>
-                <p class="index-fifth-section-text-2">National Science University, San Diego, CA</p>
-                <p class="index-fifth-section-text-2">Gighfield Park Village, Los Angeles, CA</p>
-                <p class="index-fifth-section-text-2">Synergy Tower, San Francisco, CA</p>
             </div>
-            <img class="index-fifth-section-img" src="./assets/images/image07.jpg" alt="Sample">
-            <a href="http://#.com/" target="_self"><img class="index-fifth-section-button" src="./assets/icons/north_east.svg" alt="Go"></a>
+        </article>
+        <section class="index-main-section1">
+            <img class="index-main-section1-img" src="./assets/images/image06.jpg" alt="Sample">
+            <h2>We are generate green energy that's good for world & your wallet also.</h2>
+            <p>Step up to the advantages of clean energy with SolarFlow, the worl'd leading green and renewable energy company.</p>
         </section>
-        <section class="index-sixth-section">
-            <h2 class="index-sixth-section-title">Advance infrastructure for tracking</h2>
-            <img class="index-sixth-section-img" src="./assets/images/#.jpg" alt="Sample">
-            <p class="index-sixth-section-text">Now track every volt of energy you expend with SolarFlow proprietary tracking system, facilitating end-to -end visibility for all your green energy needs.</p>
-        </section>
-        <div class="index-sixth-article-div-content">
-            <div class="index-sixth-article-div">
-                <img class="index-sixth-article-div-img" src="./assets/images/#.jpg" alt="Sample">
-                <a href="http://#.com/" target="_self"><img class="index-sixth-article-div-button" src="./assets/icons/arrow_back.svg" alt="Go"></a>
+        <section class="index-main-section2">
+            <div class="index-main-section2-div">
+                <h2>Solar Farm, NYC Park California</h2>
+                <div class="index-main-section2-div-div">
+                    <h4>52MW</h4>
+                    <p>Capacity</p>
+                </div>
+                <div class="index-main-section2-div-div">
+                    <h4>90HE</h4>
+                    <p>Total. area</p>
+                </div>
+                <div class="index-main-section2-div-div">
+                    <h4>2022</h4>
+                    <p>Build</p>
+                </div>
+                <p>National Science University, San Diego, CA</p>
+                <p>Gighfield Park Village, Los Angeles, CA</p>
+                <p>Synergy Tower, San Francisco, CA</p>
             </div>
-            <div class="index-sixth-article-div">
-                <img class="index-sixth-article-div-img" src="./assets/images/#.jpg" alt="Sample">
-                <a href="http://#.com/" target="_self"><img class="index-sixth-article-div-button" src="./assets/icons/arrow_forward.svg" alt="Go"></a>
+            <img class="index-main-section2-img" src="./assets/images/image07.jpg" alt="Sample">
+            <a href="./index.html" target="_self"><img class="index-main-section2-svg" src="./assets/icons/north_east.svg" alt="Go"></a>
+        </section>
+        <section class="index-main-section3">
+            <h2>Advance infrastructure for tracking</h2>
+            <img class="index-main-section3-img" src="./assets/images/#.jpg" alt="Sample">
+            <p>Now track every volt of energy you expend with SolarFlow proprietary tracking system, facilitating end-to -end visibility for all your green energy needs.</p>
+        </section>
+        <div class="index-main-div">
+            <div class="index-main-div-div">
+                <a href="./index.html" target="_self"><img class="index-main-div-div-img" src="./assets/images/#.jpg" alt="Sample"></a>
+                <p>Support for new electric vehicles, solar inverters and more.</p>
+            </div>
+            <div class="index-main-div-div">
+                <a href="./index.html" target="_self"><img class="index-main-div-div-img" src="./assets/images/#.jpg" alt="Sample"></a>
+                <p>How we can use more renewable energy in our life?</p>
             </div>
         </div>
-        <section class="index-seventh-section">
-            <img class="index-seventh-section-img" src="./assets/images/#.svg" alt="Sample">
-            <h3 class="index-seventh-section-title">The change to green energy wasn't easy for us and we needed a partner who could align with our vision. Thankfully, we found SolarFlow!</h3>
-            <img class="index-seventh-section-img" src="./assets/images/#.svg" alt="Sample">
-            <a href="http://#.com/" target="_self"><img class="index-seventh-section-button" src="./assets/icons/northeast.svg" alt="Go"></a>
-            <a href="http://#.com/" target="_self"><img class="index-seventh-section-button" src="./assets/icons/northeast.svg" alt="Go"></a>
-            <div class="index-seventh-section-div">
-                <a href="https://github.com/codeOchoa" target="_blank" rel="noopener"><img class="index-seventh-section-div-img" href="https://avatars.githubusercontent.com/u/158297956?v=4" alt="Foto perfil de codeOchoa"></a>
-                <h5 class="index-seventh-section-div-title">Victoria Mason</h5>
-                <p class="index-seventh-section-div-text">NYC Park Manager</p>
+        <section class="index-main-section4">
+            <img class="index-main-section4-img" src="./assets/images/#.svg" alt="Comillas">
+            <p>The change to green energy wasn't easy for us and we needed a partner who could align with our vision. Thankfully, we found SolarFlow!</h3>
+            <img class="index-main-section4-img" src="./assets/images/#.svg" alt="Comillas">
+            <a href="./index.html" target="_self"><img class="index-main-section4-svg" src="./assets/icons/arrow_back.svg" alt="Go"></a>
+            <a href="./index.html" target="_self"><img class="index-main-section4-svg" src="./assets/icons/arrow_forward.svg" alt="Go"></a>
+            <div class="index-main-section4-div">
+                <a href="https://github.com/codeOchoa" target="_blank" rel="noopener"><img class="index-main-section4-div-img" href="https://avatars.githubusercontent.com/u/158297956?v=4" alt="Foto perfil de codeOchoa"></a>
+                <h5>Pablo Ochoa</h5>
+                <p>Back-end Developer</p>
             </div>
         </section>
-        <section class="index-eighth-section">
-            <h2 class="index-eighth-section-title">Let's make planet more sustainable for future</h2>
-            <h3 class="index-eighth-section-text">Get easy quotation</h3>
-            <form class="index-eighth-section-form" action="submit" method="post">
-                <input class="index-eighth-section-input-1" type="text" placeholder="Name">
-                <input class="index-eighth-section-input-2" type="text" placeholder="Email">
-                <input class="index-eighth-section-input-2" type="text" placeholder="Phone">
-                <input class="index-eighth-section-input-1" type="text" list="options" id="options-input" name="options" placeholder="Inquiry for">
+        <section class="index-main-section5">
+            <h2>Let's make planet more sustainable for future</h2>
+            <h3>Get easy quotation</h3>
+            <form action="submit" method="post">
+                <input class="index-main-section5-input1" type="text" placeholder="Name">
+                <input class="index-main-section5-input2" type="text" placeholder="Email">
+                <input class="index-main-section5-input2" type="text" placeholder="Phone">
+                <input class="index-main-section5-input1" type="text" list="options" id="options-input" name="options" placeholder="Inquiry for">
                 <datalist id="options">
                     <option value="Option 1">
                     <option value="Option 2">
@@ -158,16 +174,31 @@
                     <option value="Option 4">
                     <option value="Option 5">
                 </datalist>
-                <input class="index-eighth-section-input-3" type="text" placeholder="Message">
-                <input class="index-eighth-section-button" type="submit" value="Send"> <!-- El boton enviar tiene que ser un ico.svg -->
+                <input class="index-main-section5-input3" type="text" placeholder="Message">
+                <input class="index-main-section5-input" type="submit" value="Send"> <!-- El boton enviar tiene que ser un ico.svg -->
             </form>
         </section>
-    </article>
-    <script>
-        fetch("./assets/js/main.js")
-            .then(response => response.text())
-            .then(data => document.getElementById("footer").innerHTML = data);
-    </script>
+    </main>
+    <footer>
+        <div id="footer"></div>
+        <script>
+            fetch("./includes/footer.html")
+                .then(response => response.text())
+                .then(data => document.getElementById("footer").innerHTML = data);
+        </script>
+        <!-- <div id="footer"></div>
+        <script>
+            function loadHeader() {
+                fetch('./includes/footer.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('footer').innerHTML = data;
+                    })
+                    .catch(error => console.error('Error loading footer:', error));
+            }
+            window.onload = loadHeader;
+        </script> -->
+    </footer>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
