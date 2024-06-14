@@ -148,9 +148,9 @@
             </div>
         </div>
         <section class="index-main-section4">
-            <img class="index-main-section4-img" src="./assets/images/#.svg" alt="Comillas">
+            <img class="index-main-section4-img" src="./assets/icons/quote-left-solid.svg" alt="Comillas">
             <p>The change to green energy wasn't easy for us and we needed a partner who could align with our vision. Thankfully, we found SolarFlow!</h3>
-            <img class="index-main-section4-img" src="./assets/images/#.svg" alt="Comillas">
+            <img class="index-main-section4-img" src="./assets/icons/quote-right-solid.svg" alt="Comillas">
             <a href="./index.html" target="_self"><img class="index-main-section4-svg" src="./assets/icons/arrow_back.svg" alt="Go"></a>
             <a href="./index.html" target="_self"><img class="index-main-section4-svg" src="./assets/icons/arrow_forward.svg" alt="Go"></a>
             <div class="index-main-section4-div">
@@ -160,8 +160,10 @@
             </div>
         </section>
         <section class="index-main-section5">
-            <h2>Let's make planet more sustainable for future</h2>
-            <h3>Get easy quotation</h3>
+            <div class="index-main-section5-div">
+                <h2>Let's make planet more sustainable for future</h2>
+                <h3>Get easy quotation</h3>
+            </div>
             <form action="submit" method="post">
                 <input class="index-main-section5-input1" type="text" placeholder="Name">
                 <input class="index-main-section5-input2" type="text" placeholder="Email">
@@ -199,6 +201,35 @@
             window.onload = loadHeader;
         </script> -->
     </footer>
+    <!-- <script>
+        function loadResource(url, fallbackUrl, elementId) {
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => {
+                    console.error('Error loading resource:', error);
+                    if (fallbackUrl) {
+                        fetch(fallbackUrl)
+                            .then(response => response.text())
+                            .then(data => {
+                                document.getElementById(elementId).innerHTML = data;
+                            })
+                            .catch(fallbackError => {
+                                console.error('Error loading fallback resource:', fallbackError);
+                            });
+                    }
+                });
+        }
+    
+        loadResource('./includes/header.html', './includes/header-fallback.html', 'header');    // Cargar el recurso principal y el fallback si es necesario
+    </script> -->
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
