@@ -11,24 +11,24 @@
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/normalize.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="icon" type="image/svg+xml" href="./assets/icons/logoSolarFlow.svg">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/logoSolarFlow.svg">
     <title>SolarFlow</title>
 </head>
 <body class="index-body">
     <header class="index-header">
         <div id="nav"></div>
         <script>
-            fetch("./includes/nav.html")
+            fetch("/includes/nav.html")
             .then(response => response.text())
             .then(data => document.getElementById("nav").innerHTML = data);
         </script>
         <!-- <div id="nav"></div>
         <script>
             function loadHeader() {
-                fetch('./includes/nav.html')
+                fetch('/includes/nav.html')
                     .then(response => response.text())
                     .then(data => {
                         document.getElementById('nav').innerHTML = data;
@@ -39,14 +39,14 @@
         </script> -->
         <div id="header"></div>
         <script>
-            fetch("./includes/header.html")
+            fetch("/includes/header.html")
             .then(response => response.text())
             .then(data => document.getElementById("header").innerHTML = data);
         </script>
         <!-- <div id="header"></div>
         <script>
             function loadHeader() {
-                fetch('./includes/header.html')
+                fetch('/includes/header.html')
                     .then(response => response.text())
                     .then(data => {
                         document.getElementById('header').innerHTML = data;
@@ -62,7 +62,7 @@
                 <h2>We are help you to brighter tomorrow</h2>
                 <div class="index-main-article-div1-div1">
                     <p>Leverage clean energy to build your business into an enterprise behemoth. A green future beckons.</p>
-                    <a href="./index.html" target="_self">Know More<img class="index-main-article-div1-div1-svg" src="./assets/icons/north_east.svg" alt="Go"></a>
+                    <a href="/index.html" target="_self">Know More<img class="index-main-article-div1-div1-svg" src="/assets/icons/north_east.svg" alt="Go"></a>
                 </div>
                 <div class="index-main-article-div1-div2">
                     <h3>We Delivered Till Now</h3>
@@ -82,33 +82,43 @@
                         <h3>12</p>
                         <p>Year's Of Experience</p>
                     </div>
-                    <img class="index-main-article-div1-div2-img" src="./assets/images/image01.jpeg" alt="Sample">
+                    <img class="index-main-article-div1-div2-img" src="/assets/images/image01.jpeg" alt="Sample">
                 </div>
             </div>
             <div class="index-main-article-div2">
+                <h2>We are committed generate a sustainable green energy to everywhere...</h2>
                 <div class="index-main-article-div2-div">
-                    <h2>We are committed generate a sustainable green energy to everywhere...</h2>
-                    <div class="index-main-article-div2-div-div1">
-                        <a href="./index.html" target="_self"><img class="index-main-article-div2-div-div1-svg" src="./assets/icons/north_east.svg" alt="Go"></a>
-                        <h3>Wind Turbines</h3>
-                        <p>With acres of high-power wind turbines, you can now access a trove of clean renewable energy with 0% carbon emissions.</p>
-                        <img class="index-main-article-div2-div-div1-img1" src="./assets/images/image02.jpeg" alt="Sample">
-                        <img class="index-main-article-div2-div-div1-img2" src="./assets/images/image03.jpeg" alt="Sample">
+                    <div class="index-main-article-div2-div-div">
+                        <div class="index-main-article-div2-div-div-div1">
+                            <a href="/index.html" target="_self"><img class="index-main-article-div2-div-div-div1-svg" src="/assets/icons/north_east.svg" alt="Go"></a>
+                            <h3>Wind Turbines</h3>
+                            <p>With acres of high-power wind turbines, you can now access a trove of clean renewable energy with 0% carbon emissions.</p>
+                        </div>
+                        <div class="index-main-article-div2-div-div-div2">
+                            <img class="index-main-article-div2-div-div-div2-img1" src="/assets/images/image02.jpeg" alt="Sample">
+                            <img class="index-main-article-div2-div-div-div2-img2" src="/assets/images/image03.jpeg" alt="Sample">
+                        </div>
                     </div>
-                    <div class="index-main-article-div2-div-div2">
-                        <a href="./index.html" target="_self"><img class="index-main-article-div2-div-div1-svg" src="./assets/icons/north_east.svg" alt="Go"></a>
-                        <h3>Solar Panels</h3>
-                        <p>Rest easy with solar-power, the torch-bearer of renewable, green energy. From domestic to business use-cases, solar energy is the way to go.</p>
-                        <img class="index-main-article-div2-div-div1-img1" src="./assets/images/image04.jpeg" alt="Sample">
-                        <img class="index-main-article-div2-div-div1-img2" src="./assets/images/image05.jpeg" alt="Sample">
+                    <div class="index-main-article-div2-div-div">
+                        <div class="index-main-article-div2-div-div-div1"></div>
+                            <a href="/index.html" target="_self"><img class="index-main-article-div2-div-div-div1-svg" src="/assets/icons/north_east.svg" alt="Go"></a>
+                            <h3>Solar Panels</h3>
+                            <p>Rest easy with solar-power, the torch-bearer of renewable, green energy. From domestic to business use-cases, solar energy is the way to go.</p>
+                        </div>
+                        <div class="index-main-article-div2-div-div-div2">
+                            <img class="index-main-article-div2-div-div-div2-img1" src="/assets/images/image04.jpeg" alt="Sample">
+                            <img class="index-main-article-div2-div-div-div2-img2" src="/assets/images/image05.jpeg" alt="Sample">
+                        </div>
                     </div>
                 </div>
             </div>
         </article>
         <section class="index-main-section1">
-            <img class="index-main-section1-img" src="./assets/images/image06.jpg" alt="Sample">
-            <h2>We are generate green energy that's good for world & your wallet also.</h2>
-            <p>Step up to the advantages of clean energy with SolarFlow, the worl'd leading green and renewable energy company.</p>
+            <img class="index-main-section1-img" src="/assets/images/image06.jpg" alt="Sample">
+            <div class="index-main-section1-div">
+                <h2>We are generate green energy that's good for world & your wallet also.</h2>
+                <p>Step up to the advantages of clean energy with SolarFlow, the worl'd leading green and renewable energy company.</p>
+            </div>
         </section>
         <section class="index-main-section2">
             <div class="index-main-section2-div">
@@ -129,30 +139,30 @@
                 <p>Gighfield Park Village, Los Angeles, CA</p>
                 <p>Synergy Tower, San Francisco, CA</p>
             </div>
-            <img class="index-main-section2-img" src="./assets/images/image07.jpg" alt="Sample">
-            <a href="./index.html" target="_self"><img class="index-main-section2-svg" src="./assets/icons/north_east.svg" alt="Go"></a>
+            <img class="index-main-section2-img" src="/assets/images/image07.jpg" alt="Sample">
+            <a href="/index.html" target="_self"><img class="index-main-section2-svg" src="/assets/icons/north_east.svg" alt="Go"></a>
         </section>
         <section class="index-main-section3">
             <h2>Advance infrastructure for tracking</h2>
-            <img class="index-main-section3-img" src="./assets/images/#.jpg" alt="Sample">
+            <img class="index-main-section3-img" src="/assets/images/#.jpg" alt="Sample">
             <p>Now track every volt of energy you expend with SolarFlow proprietary tracking system, facilitating end-to -end visibility for all your green energy needs.</p>
         </section>
         <div class="index-main-div">
             <div class="index-main-div-div">
-                <a href="./index.html" target="_self"><img class="index-main-div-div-img" src="./assets/images/image12extra.jpg" alt="Sample"></a>
+                <a href="/index.html" target="_self"><img class="index-main-div-div-img" src="/assets/images/image12extra.jpg" alt="Sample"></a>
                 <p>Support for new electric vehicles, solar inverters and more.</p>
             </div>
             <div class="index-main-div-div">
-                <a href="./index.html" target="_self"><img class="index-main-div-div-img" src="./assets/images/image13extra.jpeg" alt="Sample"></a>
+                <a href="/index.html" target="_self"><img class="index-main-div-div-img" src="/assets/images/image13extra.jpeg" alt="Sample"></a>
                 <p>How we can use more renewable energy in our life?</p>
             </div>
         </div>
         <section class="index-main-section4">
-            <img class="index-main-section4-img" src="./assets/icons/quote-left-solid.svg" alt="Comillas">
+            <img class="index-main-section4-img" src="/assets/icons/quote-left-solid.svg" alt="Comillas">
+            <a href="/index.html" target="_self"><img class="index-main-section4-svg" src="/assets/icons/arrow_back.svg" alt="Go"></a>
+            <a href="/index.html" target="_self"><img class="index-main-section4-svg" src="/assets/icons/arrow_forward.svg" alt="Go"></a>
             <p>The change to green energy wasn't easy for us and we needed a partner who could align with our vision. Thankfully, we found SolarFlow!</h3>
-            <img class="index-main-section4-img" src="./assets/icons/quote-right-solid.svg" alt="Comillas">
-            <a href="./index.html" target="_self"><img class="index-main-section4-svg" src="./assets/icons/arrow_back.svg" alt="Go"></a>
-            <a href="./index.html" target="_self"><img class="index-main-section4-svg" src="./assets/icons/arrow_forward.svg" alt="Go"></a>
+            <img class="index-main-section4-img" src="/assets/icons/quote-right-solid.svg" alt="Comillas">
             <div class="index-main-section4-div">
                 <a href="https://github.com/codeOchoa" target="_blank" rel="noopener"><img class="index-main-section4-div-img" href="https://avatars.githubusercontent.com/u/158297956?v=4" alt="Foto perfil de codeOchoa"></a>
                 <h5>Pablo Ochoa</h5>
@@ -184,14 +194,14 @@
     <footer>
         <div id="footer"></div>
         <script>
-            fetch("./includes/footer.html")
+            fetch("/includes/footer.html")
                 .then(response => response.text())
                 .then(data => document.getElementById("footer").innerHTML = data);
         </script>
         <!-- <div id="footer"></div>
         <script>
             function loadHeader() {
-                fetch('./includes/footer.html')
+                fetch('/includes/footer.html')
                     .then(response => response.text())
                     .then(data => {
                         document.getElementById('footer').innerHTML = data;
@@ -228,8 +238,8 @@
                 });
         }
     
-        loadResource('./includes/header.html', './includes/header-fallback.html', 'header');    // Cargar el recurso principal y el fallback si es necesario
+        loadResource('/includes/header.html', '/includes/header-fallback.html', 'header');    // Cargar el recurso principal y el fallback si es necesario
     </script> -->
-    <script src="./assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>

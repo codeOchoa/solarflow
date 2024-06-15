@@ -31,7 +31,7 @@ $prefix: "mo-";
 
 @font-face {
   font-family: "Josefin Sans";
-  src: url("../fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
+  src: url("/assets/fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
   font-style: normal;
   font-weight: 300;
 }
@@ -78,6 +78,7 @@ body {
 
 .includes-nav-header {
   background-color: #52736E;
+  border-radius: 0 0 30px 30px;
   box-sizing: border-box;
   height: auto;
   position: fixed;
@@ -410,7 +411,7 @@ body {
   box-sizing: border-box;
   color: #121212;
   display: flex;
-  padding: 0 15% 0 0;
+  position: relative;
   width: 100%;
 }
 
@@ -418,27 +419,32 @@ body {
   display: flex;
   height: auto;
   justify-content: flex-start;
-  width: 40%;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 30%;
 }
 
 .index-main-section1-div {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  position: relative;
 }
 
 .index-main-section1 h2 {
   color: #F4F4F4;
   font-size: 4rem;
   font-weight: bold;
-  margin: 2% 5% 2% 5%;
-  width: 43%;
+  margin: 2% 5% 2% 15%;
+  width: 48%;
 }
 
 .index-main-section1 p {
-  font-size: 1rem;
-  margin: 2% 5% 2% 5%;
+  font-size: 1.5rem;
+  margin: 2% 5% 2% 15%;
+  width: 45%;
 }
 
 .index-main-section2 {
@@ -660,7 +666,7 @@ body {
 
 .includes-footer-footer {
   background-color: #C6DABF;
-  background-image: url("../images/image11extrafooter.jpeg");
+  background-image: url("/assets/images/image11extrafooter.jpeg");
   background-position: left;
   background-size: cover;
   color: #121212;
@@ -768,34 +774,46 @@ body {
   margin: 2% 7% 2% 7%;
 }
 
-/* .includes-contact-main {
-  display: flex;
-} */
-
-.includes-contact-main-section  {
+.includes-contact-main {
   background-color: #F4F4F4;
+  box-sizing: border-box;
 }
 
-/* .includes-contact-main-section-div1  {
-  display: flex;
-} */
+.includes-contact-main-section  {
+  padding: 8% 25% 5% 25%;
+}
 
-/* .includes-contact-main-section-div1 h3  {
+.includes-contact-main-section-div1  {
+  align-items: flex-start;
   display: flex;
-} */
+  flex-direction: column;
+}
 
-/* .includes-contact-main-section-div1 p  {
-  display: flex;
-} */
+.includes-contact-main-section-div1 h3  {
+  color: #52736E;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0% 0% 2% 0%;
+}
+
+.includes-contact-main-section-div1 p  {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin: 0% 0% 7% 0%;
+}
 
 /* .includes-contact-main-section-div2  {
   display: flex;
 } */
 
-/* .includes-contact-main-section-div2 h3  {
-  display: flex;
-} */
+.includes-contact-main-section-div2 h3  {
+  color: #52736E;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0% 0% 2% 0%;
+}
 
-/* .includes-contact-main-section-div2 p  {
-  display: flex;
-} */
+.includes-contact-main-section-div2 p  {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
