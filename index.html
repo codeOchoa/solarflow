@@ -7,10 +7,6 @@
     <meta name="description" content="Instalación y mantenimiento de sistemas de energía solar para hogares y pequeñas empresas.">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="#">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="stylesheet" href="/assets/css/main.css">
@@ -25,36 +21,12 @@
             .then(response => response.text())
             .then(data => document.getElementById("nav").innerHTML = data);
         </script>
-        <!-- <div id="nav"></div>
-        <script>
-            function loadHeader() {
-                fetch('/includes/nav.html')
-                    .then(response => response.text())
-                    .then(data => {
-                        document.getElementById('nav').innerHTML = data;
-                    })
-                    .catch(error => console.error('Error loading navigation bar:', error));
-            }
-            window.onload = loadHeader;
-        </script> -->
         <div id="header"></div>
         <script>
             fetch("/includes/header.html")
             .then(response => response.text())
             .then(data => document.getElementById("header").innerHTML = data);
         </script>
-        <!-- <div id="header"></div>
-        <script>
-            function loadHeader() {
-                fetch('/includes/header.html')
-                    .then(response => response.text())
-                    .then(data => {
-                        document.getElementById('header').innerHTML = data;
-                    })
-                    .catch(error => console.error('Error loading header:', error));
-            }
-            window.onload = loadHeader;
-        </script> -->
     </header>
     <main class="index-main">
         <article class="index-main-article">
@@ -126,16 +98,18 @@
             <div class="index-main-section2-div">
                 <h2>Cauchari Solar Plant, San Juan Argentina</h2>
                 <div class="index-main-section2-div-div">
-                    <h4>305MW</h4>
-                    <p>Capacity</p>
-                </div>
-                <div class="index-main-section2-div-div">
-                    <h4>800HE</h4>
-                    <p>Total. area</p>
-                </div>
-                <div class="index-main-section2-div-div">
-                    <h4>2020</h4>
-                    <p>Build</p>
+                    <div class="index-main-section2-div-div-div">
+                        <h4>305MW</h4>
+                        <p>Capacity</p>
+                    </div>
+                    <div class="index-main-section2-div-div-div">
+                        <h4>800HE</h4>
+                        <p>Total. area</p>
+                    </div>
+                    <div class="index-main-section2-div-div-div">
+                        <h4>2020</h4>
+                        <p>Build</p>
+                    </div>
                 </div>
                 <p>Anchipurac, San Juan, Argentina</p>
                 <p>Xinjiang Solar Farm, Xinjiang, China</p>
@@ -200,48 +174,7 @@
                 .then(response => response.text())
                 .then(data => document.getElementById("footer").innerHTML = data);
         </script>
-        <!-- <div id="footer"></div>
-        <script>
-            function loadHeader() {
-                fetch('/includes/footer.html')
-                    .then(response => response.text())
-                    .then(data => {
-                        document.getElementById('footer').innerHTML = data;
-                    })
-                    .catch(error => console.error('Error loading footer:', error));
-            }
-            window.onload = loadHeader;
-        </script> -->
     </footer>
-    <!-- <script>
-        function loadResource(url, fallbackUrl, elementId) {
-            fetch(url)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.text();
-                })
-                .then(data => {
-                    document.getElementById(elementId).innerHTML = data;
-                })
-                .catch(error => {
-                    console.error('Error loading resource:', error);
-                    if (fallbackUrl) {
-                        fetch(fallbackUrl)
-                            .then(response => response.text())
-                            .then(data => {
-                                document.getElementById(elementId).innerHTML = data;
-                            })
-                            .catch(fallbackError => {
-                                console.error('Error loading fallback resource:', fallbackError);
-                            });
-                    }
-                });
-        }
-    
-        loadResource('/includes/header.html', '/includes/header-fallback.html', 'header');    // Cargar el recurso principal y el fallback si es necesario
-    </script> -->
     <script src="/assets/js/main.js"></script>
 </body>
 </html>
