@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="profile" content="https://github.com/codeOchoa">
+    <meta name="copyright" content="codeOchoa">
+    <meta name="description" content="Tienda especializada en cerámica y velas de soja aromaticas.">
+    <meta name="keywords" content="ceramica, velas, soja">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" href="../assets/icons/logo.svg">
+    <title>Malec</title>
+</head>
+
+<body>
+    <header>
+        <!-- Nav mobile -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="../index.html">Malec</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 d-none d-lg-flex">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="../index.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../index.html">Ver todos los productos</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="../index.html">Sale</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="../index.html">Tazas</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="../index.html">Accesorios</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="../index.html">Colecciones</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="../index.html">Gift card</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="../index.html">Ofertas</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="../index.html">Preventa</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="../index.html">Envio gratis</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">¿Quienes somos?</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="./contact.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Ayuda</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./contact.html">Localizar mi prodcuto</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./contact.html">Cambio de artículos</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./contact.html">Preguntas frecuentes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Nav desktop -->
+                <div class="ms-auto d-flex align-items-center">
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body-m">
+                            <form class="d-flex search-form">
+                                <input class="form-control form-control-m" type="search" placeholder="Buscar" aria-expanded="false"
+                                    aria-label="Buscar">
+                            </form>
+                            <div class="dropdown">
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">*Links resultados de busqueda interna*</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-main me-2 d-none d-lg-inline-block" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+                        aria-controls="collapseExample">
+                        <i class="bi bi-search"></i>
+                    </button>
+                    <form class="d-flex me-0 mb-0 mb-lg-0 ms-lg-0">
+                        <a class="btn btn-main me-0 d-none d-lg-inline-block" href="./pages/cart.html"
+                            target="_self" type="submit">
+                            <i class="bi-cart-fill me-0"></i>
+                            <span class="badge badge-m ms-1 rounded-pill">0</span>
+                        </a>
+                    </form>
+                    <button class="btn btn-main d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                        <i class="bi bi-list" id="offcanvasWithBothOptionsLabel"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1"
+                        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                        <div class="offcanvas-header">
+                            <form class="d-flex search-form" id="offcanvasWithBothOptionsLabel">
+                                <input class="form-control form-control-m me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                            </form>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 d-lg-none d-lg-flex">
+                                <li class="nav-item"><a class="nav-link active" aria-current="page"
+                                        href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="../index.html"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="../index.html">Ver todos los productos</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="../index.html">Sale</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="../index.html">Tazas</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="../index.html">Accesorios</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="../index.html">Colecciones</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="../index.html">Gift card</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="../index.html">Ofertas</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="../index.html">Preventa</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="../index.html">Envio gratis</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="./about.html">¿Quienes somos?</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="./contact.html"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">Ayuda</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="./contact.html">Localizar mi prodcuto</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./contact.html">Cambio de artículos</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./contact.html">Preguntas frecuentes</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="d-flex me-3 mb-0 mb-lg-0 ms-lg-0">
+                                <a class="btn btn-main me-0 d-lg-none" href="./pages/cart.html" target="_self"
+                                    type="submit">
+                                    <i class="bi-cart-fill me-1"></i>
+                                    Cart
+                                    <span class="badge badge-m ms-1 rounded-pill">0</span>
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="row gx-4 gx-lg-5 align-items-center">
+                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="../assets/img/teapot01p.jpg"
+                            alt="Tetera cerámica 500cc retro" /></div>
+                    <div class="col-md-6">
+                        <div class="small mb-1">SKU: BST-502</div>
+                        <h1 class="display-5 fw-bolder">Tetera cerámica 500cc retro</h1>
+                        <div class="fs-5 mb-5">
+                            <span class="text-muted text-decoration-line-through">$4.43</span>
+                            <span>$3.43</span>
+                        </div>
+                        <p class="lead">Añade un toque de nostalgia y encanto a tus momentos de té con nuestra tetera de
+                            cerámica de 500 centímetros cúbicos, diseñada con un estilo retro que enamora. Esta tetera
+                            combina la funcionalidad moderna con un diseño clásico, perfecto para quienes aprecian el
+                            estilo vintage y la calidad de la cerámica artesanal. Con capacidad para 500 cc, es ideal
+                            para preparar y compartir tus infusiones favoritas, manteniendo el calor y el sabor de
+                            manera óptima. Ya sea para una tarde relajante o una reunión con amigos, nuestra tetera de
+                            estilo retro es un accesorio imprescindible que aporta elegancia y un aire de sofisticación
+                            a cualquier ocasión. ¡Descubre la belleza del pasado con una tetera que celebra el arte del
+                            té!</p>
+                        <div class="d-flex">
+                            <input class="form-control text-center me-3" id="inputQuantity" type="number" min="1"
+                                max="99" value="1" style="max-width: 3rem" />
+                            <a class="btn btn-main mt-auto" href="../pages/cart.html"><i
+                                    class="bi-cart-fill me-1"></i>
+                                Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 bg-light">
+            <div class="container px-4 px-lg-5 mt-5">
+                <h2 class="fw-bolder mb-4">Productos relacionados</h2>
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col me-3 mb-5 ms-3 p-0 shadow-box">
+                        <div class="card h-100">
+                            <a href="./taza-ceramica-350cc-cuchara.html" target="_self"><img class="card-img-top"
+                                    src="../assets/img/coffee06tn.jpg" alt="Taza cerámica 350cc + cuchara" /></a>
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <a class="text-decoration-none text-dark" href="./taza-ceramica-350cc-cuchara.html"
+                                        title="Taza Cerámica + Cuchara" aria-label="Taza Cerámica + Cuchara"
+                                        target="_self">
+                                        <h5 class="fw-bolder">Taza cerámica 350cc + cuchara</h5>
+                                    </a>
+                                    $7.21
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-main mt-auto"
+                                        href="./taza-ceramica-350cc-cuchara.html"
+                                        title="Compra rápida de Taza Cerámica + Cuchara"
+                                        aria-label="Compra rápida de Taza Cerámica + Cuchara" target="_self">Agregar al
+                                        carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col me-3 mb-5 ms-3 p-0 shadow-box">
+                        <div class="card h-100">
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                                Sale</div>
+                            <a href="./taza-325cc-diseño.html" target="_self"><img class="card-img-top"
+                                    src="../assets/img/forest01tn.jpg" alt="Taza 325cc Diseño" /></a>
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <a class="text-decoration-none text-dark" href="./taza-325cc-diseño.html"
+                                        title="Taza 325cc Diseño" aria-label="Taza 325cc Diseño" target="_self">
+                                        <h5 class="fw-bolder">Taza 325cc Diseño</h5>
+                                    </a>
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <span class="text-muted text-decoration-line-through">$6.49</span>
+                                    $5.49
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-main mt-auto"
+                                        href="./taza-325cc-diseño.html" target="_self">Agregar carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col me-3 mb-5 ms-3 p-0 shadow-box">
+                        <div class="card h-100">
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                                Sale</div>
+                            <a href="./pocillo-150cc-expreso-porcelana-gastronomica.html" target="_self">
+                                <img class="card-img-top" src="../assets/img/flower01tn.jpg"
+                                    alt="Pocillo 150cc expreso porcelana gastronómica" /></a>
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <a class="text-decoration-none text-dark"
+                                        href="./pocillo-150cc-expreso-porcelana-gastronomica.html"
+                                        title="Pocillo Expreso Porcelana Gastronómica"
+                                        aria-label="Pocillo Café Expreso Porcelana Gastronómica" target="_self">
+                                        <h5 class="fw-bolder">Pocillo 150cc expreso porcelana gastronómica</h5>
+                                    </a>
+                                    <span class="text-muted text-decoration-line-through">$2.37</span>
+                                    $1.37
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-main mt-auto"
+                                        href="./pocillo-150cc-expreso-porcelana-gastronomica.html"
+                                        target="_self">Agregar carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col me-3 mb-5 ms-3 p-0 shadow-box">
+                        <div class="card h-100">
+                            <a href="./taza-290cc-plato-arte-latte.html" target="_self">
+                                <img class="card-img-top" src="../assets/img/coffee11tn.jpg"
+                                    alt="Taza 290cc c/Plato Arte Latte" /></a>
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <a class="text-decoration-none text-dark" href="./taza-290cc-plato-arte-latte.html"
+                                        title="Taza 290cc c/Plato Arte Latte"
+                                        aria-label="Pocillo Expreso Porcelana Gastronómica" target="_self">
+                                        <h5 class="fw-bolder">Taza 290cc + plato arte latte</h5>
+                                    </a>
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    $7.49
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-main mt-auto"
+                                        href="./taza-290cc-plato-arte-latte.html" target="_self">Agregar carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer text-center bg-dark text-white p-4">
+        <div class="container">
+            <section class="mt-5">
+                <div class="row text-center d-flex justify-content-center pt-5">
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="../index.html" class="txt-deco-m text-white">Inicio</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="./product.html" class="txt-deco-m text-white">Productos</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="./about.html" class="txt-deco-m text-white">¿Quienes somos?</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="./contact.html" class="txt-deco-m text-white">Contacto</a>
+                        </h6>
+                    </div>
+                </div>
+            </section>
+            <hr class="my-5" />
+            <section class="mb-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <p>
+                            Empresa especializada en cerámica, velas de soja aromaticas y con el mejor precio y calidad
+                            del mercado.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="text-center mb-5">
+                <a class="txt-deco-m text-white me-4" href="https://www.facebook.com/profile.php?id=100091698780289">
+                    <i class="bi bi-facebook-f"></i>
+                </a>
+                <a class="txt-deco-m text-white me-4" href="https://x.com/PabloDKx">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a class="txt-deco-m text-white me-4" href="https://www.google.com.ar/">
+                    <i class="bi bi-google"></i>
+                </a>
+                <a class="txt-deco-m text-white me-4" href="https://www.instagram.com/malec_velas/">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a class="txt-deco-m text-white me-4" href="https://www.linkedin.com/in/pablo-ochoa-0b9428301/">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a class="txt-deco-m text-white me-4" href="https://github.com/codeOchoa">
+                    <i class="bi bi-github"></i>
+                </a>
+            </section>
+        </div>
+        <div class="text-center-m p-3">
+            <span>&copy; 2024 Copyright: Malec. Todos los derechos reservados.</span>
+            <div>Defensa de las y los consumidores. Para reclamos
+                <a class="text-white" href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario"
+                    rel="noopener" target="_blank">ingrese aquí</a>
+            </div>
+            <a class="text-white" href="https://kissaccesorios.empretienda.com.ar/">Test</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

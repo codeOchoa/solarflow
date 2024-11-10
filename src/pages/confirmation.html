@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="profile" content="https://github.com/codeOchoa">
+    <meta name="copyright" content="codeOchoa">
+    <meta name="description" content="Tienda especializada en cerámica y velas de soja aromaticas.">
+    <meta name="keywords" content="ceramica, velas, soja">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" href="../assets/icons/logo.svg">
+    <title>Malec</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="scroll-top-widget">
+            <i class="bi bi-caret-up"></i>
+        </a>
+        <a class="whatsapp-widget" href="https://walink.co/1ff8f2" target="_blank" rel="noopener">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+        <!-- Nav mobile -->
+        <nav class="navbar navbar-m navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="../index.html">Malec</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 d-none d-lg-flex">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#!" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./product.html">Ver todos los productos</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./404.html">Sale</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./404.html">Tazas</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./404.html">Accesorios</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./404.html">Colecciones</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./404.html">Gift card</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./404.html">Ofertas</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./404.html">Preventa</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./404.html">Envio gratis</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">¿Quienes somos?</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#!" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Ayuda</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./contact.html">Localizar mi prodcuto</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./contact.html">Cambio de artículos</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./404.html">Preguntas frecuentes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Nav desktop -->
+                <div class="ms-auto d-flex align-items-center">
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body-m">
+                            <form class="d-flex search-form">
+                                <input class="form-control form-control-m" type="search" placeholder="Buscar"
+                                    aria-expanded="false" aria-label="Buscar">
+                            </form>
+                            <div class="dropdown">
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">*Links resultados de busqueda interna*</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-main me-2 d-none d-lg-inline-block" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="bi bi-search"></i>
+                    </button>
+                    <form class="d-flex me-0 mb-0 mb-lg-0 ms-lg-0">
+                        <a class="btn btn-main me-0 d-none d-lg-inline-block" href="./cart.html" target="_self"
+                            type="submit">
+                            <i class="bi-cart-fill me-0"></i>
+                            <span class="badge badge-m ms-1 rounded-pill">0</span>
+                        </a>
+                    </form>
+                    <button class="btn btn-main d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                        <i class="bi bi-list" id="offcanvasWithBothOptionsLabel"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1"
+                        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                        <div class="offcanvas-header">
+                            <form class="d-flex search-form" id="offcanvasWithBothOptionsLabel">
+                                <input class="form-control form-control-m me-2" type="search" placeholder="Buscar"
+                                    aria-label="Buscar">
+                            </form>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 d-lg-none d-lg-flex">
+                                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Inicio</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#!" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="./product.html">Ver todos los
+                                                productos</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./404.html">Sale</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./404.html">Tazas</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./404.html">Accesorios</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./404.html">Colecciones</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./404.html">Gift card</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./404.html">Ofertas</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./404.html">Preventa</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./404.html">Envio gratis</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="./about.html">¿Quienes somos?</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#!" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">Ayuda</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="./contact.html">Localizar mi
+                                                prodcuto</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./contact.html">Cambio de artículos</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./404.html">Preguntas
+                                                frecuentes</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="d-flex me-3 mb-0 mb-lg-0 ms-lg-0">
+                                <a class="btn btn-main me-0 d-lg-none" href="./cart.html" target="_self" type="submit">
+                                    <i class="bi-cart-fill me-1"></i>
+                                    Cart
+                                    <span class="badge badge-m ms-1 rounded-pill">0</span>
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Confirmation -->
+        <section class="page-wrapper success-msg">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="block text-center">
+                            <i class="check-m bi bi-check2-circle"></i>
+                            <h2 class="text-center">Gracias por tu pago!</h2>
+                            <p>Pronto te llegara un mail con el resumen de tu compra.</p>
+                            <a class="btn btn-main mt-20" href="../index.html">Seguir comprando</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Coupon -->
+        <section class="mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center col-md-8 col-8 offset-md-2 offset-2 offset-xxl-2 promotion-box">
+                        <img class="img-coupon-m my-4" src="../assets/img/gift_promo.png" alt="gift" />
+                        <h3 class="text-coupon-m">
+                            Tú y tu amigo obtienen un 30% de descuento en la próxima compra con un tope de reintegro de
+                            $5.00
+                        </h3>
+                        <p>Tu código promocional</p>
+                        <h1>CDOC2024</h1>
+                        <hr />
+                        <p>Compartir en</p>
+                        <div class="social-icons">
+                            <a href="mailto:pablo.m.ochoa@email.com" subject="Cupon descuento"
+                                body="Tengo un cupon descuento en Malec de 30%!" class="txt-deco-m text-white me-4" target="_blank">
+                                <i class="bi bi-google text-dark"></i>
+                            </a>
+                            <a href="https://walink.co/19bc0d" class="txt-deco-m text-white me-4" target="_blank">
+                                <i class="bi bi-whatsapp text-dark"></i>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=100091698780289"
+                                class="txt-deco-m text-white me-4" target="_blank">
+                                <i class="bi bi-facebook text-dark"></i>
+                            </a>
+                            <a href="https://www.instagram.com/malec_velas/" class="txt-deco-m text-white me-4" target="_blank">
+                                <i class="bi bi-instagram text-dark"></i>
+                            </a>
+                            <a href="https://x.com/PabloDKx" class="txt-deco-m text-white me-4" target="_blank">
+                                <i class="bi bi-twitter text-dark"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/pablo-ochoa-0b9428301/"
+                                class="txt-deco-m text-white me-4" target="_blank">
+                                <i class="bi bi-linkedin text-dark"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer text-center bg-dark text-white p-4">
+        <div class="container">
+            <section class="mt-5">
+                <div class="row text-center d-flex justify-content-center pt-5">
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="../index.html" class="txt-deco-m text-white">Inicio</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="./product.html" class="txt-deco-m text-white">Productos</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="./about.html" class="txt-deco-m text-white">¿Quienes somos?</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="./contact.html" class="txt-deco-m text-white">Contacto</a>
+                        </h6>
+                    </div>
+                </div>
+            </section>
+            <hr class="my-5" />
+            <section class="mb-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <p>
+                            Empresa especializada en cerámica, velas de soja aromaticas y con el mejor precio y calidad
+                            del mercado.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="text-center mb-5">
+                <a class="txt-deco-m text-white me-4" href="https://www.facebook.com/profile.php?id=100091698780289">
+                    <i class="bi bi-facebook-f"></i>
+                </a>
+                <a class="txt-deco-m text-white me-4" href="https://x.com/PabloDKx">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a class="txt-deco-m text-white me-4" href="https://www.google.com.ar/">
+                    <i class="bi bi-google"></i>
+                </a>
+                <a class="txt-deco-m text-white me-4" href="https://www.instagram.com/malec_velas/">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a class="txt-deco-m text-white me-4" href="https://www.linkedin.com/in/pablo-ochoa-0b9428301/">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a class="txt-deco-m text-white me-4" href="https://github.com/codeOchoa">
+                    <i class="bi bi-github"></i>
+                </a>
+            </section>
+        </div>
+        <div class="text-center-m p-3">
+            <span>&copy; 2024 Copyright: Malec. Todos los derechos reservados.</span>
+            <div>Defensa de las y los consumidores. Para reclamos
+                <a class="text-white" href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario"
+                    rel="noopener" target="_blank">ingrese aquí</a>
+            </div>
+            <a class="text-white" href="https://kissaccesorios.empretienda.com.ar/">Test</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

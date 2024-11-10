@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="profile" content="https://github.com/codeOchoa">
+    <meta name="copyright" content="codeOchoa">
+    <meta name="description" content="Tienda especializada en cerámica y velas de soja aromaticas.">
+    <meta name="keywords" content="ceramica, velas, soja">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" href="../assets/icons/logo.svg">
+    <title>Malec</title>
+</head>
+
+<body>
+    <a href="#" class="scroll-top-widget">
+        <i class="bi bi-caret-up"></i>
+    </a>
+    <a class="whatsapp-widget" href="https://walink.co/1ff8f2" target="_blank" rel="noopener">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+    <header>
+        <!-- Nav mobile -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="../index.html">Malec</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 d-none d-lg-flex">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#!" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./product.html">Ver todos los productos</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./404.html">Sale</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./404.html">Tazas</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./404.html">Accesorios</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./404.html">Colecciones</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./404.html">Gift card</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./404.html">Ofertas</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./404.html">Preventa</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./404.html">Envio gratis</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">¿Quienes somos?</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#!" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Ayuda</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./contact.html">Localizar mi prodcuto</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./contact.html">Cambio de artículos</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./404.html">Preguntas frecuentes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Nav desktop -->
+                <div class="ms-auto d-flex align-items-center">
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body-m">
+                            <form class="d-flex search-form">
+                                <input class="form-control form-control-m" type="search" placeholder="Buscar"
+                                    aria-expanded="false" aria-label="Buscar">
+                            </form>
+                            <div class="dropdown">
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">*Links resultados de busqueda interna*</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-main me-2 d-none d-lg-inline-block" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="bi bi-search"></i>
+                    </button>
+                    <form class="d-flex me-0 mb-0 mb-lg-0 ms-lg-0">
+                        <a class="btn btn-main me-0 d-none d-lg-inline-block" href="./cart.html" target="_self"
+                            type="submit">
+                            <i class="bi-cart-fill me-0"></i>
+                            <span class="badge badge-m ms-1 rounded-pill">1</span>
+                        </a>
+                    </form>
+                    <button class="btn btn-main d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                        <i class="bi bi-list" id="offcanvasWithBothOptionsLabel"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1"
+                        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                        <div class="offcanvas-header">
+                            <form class="d-flex search-form" id="offcanvasWithBothOptionsLabel">
+                                <input class="form-control form-control-m me-2" type="search" placeholder="Buscar"
+                                    aria-label="Buscar">
+                            </form>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 d-lg-none d-lg-flex">
+                                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Inicio</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#!" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="./product.html">Ver todos los
+                                                productos</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./404.html">Sale</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./404.html">Tazas</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./404.html">Accesorios</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./404.html">Colecciones</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./404.html">Gift card</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./404.html">Ofertas</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./404.html">Preventa</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./404.html">Envio gratis</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="./about.html">¿Quienes somos?</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#!" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">Ayuda</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="./contact.html">Localizar mi
+                                                prodcuto</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./contact.html">Cambio de artículos</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./404.html">Preguntas
+                                                frecuentes</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="d-flex me-3 mb-0 mb-lg-0 ms-lg-0">
+                                <a class="btn btn-main me-0 d-lg-none" href="./cart.html" target="_self" type="submit">
+                                    <i class="bi-cart-fill me-1"></i>
+                                    Cart
+                                    <span class="badge badge-m ms-1 rounded-pill">1</span>
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="page-wrapper">
+            <div class="checkout shopping">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="block billing-details">
+                                <h4 class="widget-title">Detalles de facturación</h4>
+                                <form class="checkout-form">
+                                    <div class="form-group">
+                                        <label for="full_name">Nombre completo</label>
+                                        <input type="text" class="form-control" id="full_name" placeholder="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="user_address">Dirección</label>
+                                        <input type="text" class="form-control" id="user_address" placeholder="">
+                                    </div>
+                                    <div class="checkout-country-code clearfix">
+                                        <div class="form-group">
+                                            <label for="user_post_code">Código postal</label>
+                                            <input type="text" class="form-control" id="user_post_code" name="zipcode"
+                                                value="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="user_city">Ciudad</label>
+                                            <input type="text" class="form-control" id="user_city" name="city" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="user_country">País</label>
+                                        <input type="text" class="form-control" id="user_country" placeholder="">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="block">
+                                <h4 class="widget-title">Método de pago</h4>
+                                <p>Datos de la tarjeta de crédito (Pago seguro)</p>
+                                <div class="checkout-product-details">
+                                    <div class="payment">
+                                        <div class="card-details">
+                                            <form class="checkout-form">
+                                                <div class="form-group">
+                                                    <label for="card-number">Número de tarjeta <span
+                                                            class="required">*</span></label>
+                                                    <input id="card-number" class="form-control" type="tel"
+                                                        placeholder="•••• •••• •••• ••••">
+                                                </div>
+                                                <div class="form-group half-width padding-right">
+                                                    <label for="card-expiry">Expiración (MM/AA) <span
+                                                            class="required">*</span></label>
+                                                    <input id="card-expiry" class="form-control" type="tel"
+                                                        placeholder="MM / AA">
+                                                </div>
+                                                <div class="form-group half-width padding-left">
+                                                    <label for="card-cvc">Código de tarjeta <span
+                                                            class="required">*</span></label>
+                                                    <input id="card-cvc" class="form-control" type="tel" maxlength="4"
+                                                        placeholder="CVC">
+                                                </div>
+                                                <a href="./confirmation.html" class="btn btn-main mt-20">Realizar
+                                                    pedido</a>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product-checkout-details">
+                                <div class="block">
+                                    <h4 class="widget-title">Resumen del pedido</h4>
+                                    <div class="media product-card">
+                                        <a class="pull-left" href="./art0009.html">
+                                            <img class="media-object" src="../assets/img/image01co.png"
+                                                alt="Taza cerámica 350cc diseño Chanel" />
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading"><a href="./art0009.html">Taza cerámica 350cc
+                                                    diseño Chanel</a></h4>
+                                            <p class="price">1 x $15.53</p>
+                                            <span class="remove">Eliminar</span>
+                                        </div>
+                                    </div>
+                                    <div class="discount-code">
+                                        <p>Tenés un descuento? <a data-toggle="modal" data-target="#coupon-modal"
+                                                href="#!">insértelo aquí</a></p>
+                                    </div>
+                                    <ul class="summary-prices">
+                                        <li>
+                                            <span>IVA (21%):</span>
+                                            <span class="price">$3.26</span>
+                                        </li>
+                                        <li>
+                                            <span>País (8%):</span>
+                                            <span class="price">$1.24</span>
+                                        </li>
+                                        <li>
+                                            <span>Ganancia (30%):</span>
+                                            <span class="price">$4.66</span>
+                                        </li>
+                                        <li>
+                                            <span>IIBB Buenos Aires (2%):</span>
+                                            <span class="price">$0.31</span>
+                                        </li>
+                                        <li>
+                                            <span>Cupón de descuento:</span>
+                                            <span class="price">-$5.00</span>
+                                        </li>
+                                        <li>
+                                            <span>Subtotal:</span>
+                                            <span class="price">$20.00</span>
+                                        </li>
+                                        <li>
+                                            <span>Envío:</span>
+                                            <span>Free</span>
+                                        </li>
+                                    </ul>
+                                    <div class="summary-total">
+                                        <span>Total</span>
+                                        <span>$20.00</span>
+                                    </div>
+                                    <div class="verified-icon">
+                                        <img src="../assets/img/verified.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="coupon-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Introduce el código de cupón">
+                            </div>
+                            <button type="submit" class="btn btn-main">Aplicar cupón</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer text-center bg-dark text-white p-4">
+        <div class="container">
+            <section class="mt-5">
+                <div class="row text-center d-flex justify-content-center pt-5">
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="../index.html" class="txt-deco-m text-white">Inicio</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="./product.html" class="txt-deco-m text-white">Productos</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="./about.html" class="txt-deco-m text-white">¿Quienes somos?</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="./contact.html" class="txt-deco-m text-white">Contacto</a>
+                        </h6>
+                    </div>
+                </div>
+            </section>
+            <hr class="my-5" />
+            <section class="mb-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <p>
+                            Empresa especializada en cerámica, velas de soja aromaticas y con el mejor precio y calidad
+                            del mercado.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="text-center mb-5">
+                <a class="txt-deco-m text-white me-4" href="https://www.facebook.com/profile.php?id=100091698780289">
+                    <i class="bi bi-facebook-f"></i>
+                </a>
+                <a class="txt-deco-m text-white me-4" href="https://x.com/PabloDKx">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a class="txt-deco-m text-white me-4" href="https://www.google.com.ar/">
+                    <i class="bi bi-google"></i>
+                </a>
+                <a class="txt-deco-m text-white me-4" href="https://www.instagram.com/malec_velas/">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a class="txt-deco-m text-white me-4" href="https://www.linkedin.com/in/pablo-ochoa-0b9428301/">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a class="txt-deco-m text-white me-4" href="https://github.com/codeOchoa">
+                    <i class="bi bi-github"></i>
+                </a>
+            </section>
+        </div>
+        <div class="text-center-m p-3">
+            <span>&copy; 2024 Copyright: Malec. Todos los derechos reservados.</span>
+            <div>Defensa de las y los consumidores. Para reclamos
+                <a class="text-white" href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario"
+                    rel="noopener" target="_blank">ingrese aquí</a>
+            </div>
+            <a class="text-white" href="https://kissaccesorios.empretienda.com.ar/">Test</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
