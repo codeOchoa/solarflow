@@ -1,3 +1,3 @@
 ## SolarFlow
 
-Tienda de productos para la energia solar.
+El objetivo de este proyecto es proporcionar una solución innovadora y centralizada para gestionar y optimizar los sistemas de energia solar. Nuestra solución es la de implementar una plataforma digital avanzada que permitirá a los usuarios supervisar en tiempo real el rendimiento de sus sistema solares, recibir notificaciones automaticas de fallos, integrar la red eléctrica tradicional y optimizar el uso de la energía almacenada, todo con herramientas personalizables para generar informes detallados y maximizar el ahorro energético.
