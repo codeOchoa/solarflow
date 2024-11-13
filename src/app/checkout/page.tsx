@@ -1,147 +1,140 @@
-<main>
-        <div class="page-wrapper">
-            <div class="checkout shopping">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <div class="block billing-details">
-                                <h4 class="widget-title">Detalles de facturación</h4>
-                                <form class="checkout-form">
-                                    <div class="form-group">
-                                        <label for="full_name">Nombre completo</label>
-                                        <input type="text" class="form-control" id="full_name" placeholder="">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="user_address">Dirección</label>
-                                        <input type="text" class="form-control" id="user_address" placeholder="">
-                                    </div>
-                                    <div class="checkout-country-code clearfix">
-                                        <div class="form-group">
-                                            <label for="user_post_code">Código postal</label>
-                                            <input type="text" class="form-control" id="user_post_code" name="zipcode"
-                                                value="">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="user_city">Ciudad</label>
-                                            <input type="text" class="form-control" id="user_city" name="city" value="">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="user_country">País</label>
-                                        <input type="text" class="form-control" id="user_country" placeholder="">
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="block">
-                                <h4 class="widget-title">Método de pago</h4>
-                                <p>Datos de la tarjeta de crédito (Pago seguro)</p>
-                                <div class="checkout-product-details">
-                                    <div class="payment">
-                                        <div class="card-details">
-                                            <form class="checkout-form">
-                                                <div class="form-group">
-                                                    <label for="card-number">Número de tarjeta <span
-                                                            class="required">*</span></label>
-                                                    <input id="card-number" class="form-control" type="tel"
-                                                        placeholder="•••• •••• •••• ••••">
-                                                </div>
-                                                <div class="form-group half-width padding-right">
-                                                    <label for="card-expiry">Expiración (MM/AA) <span
-                                                            class="required">*</span></label>
-                                                    <input id="card-expiry" class="form-control" type="tel"
-                                                        placeholder="MM / AA">
-                                                </div>
-                                                <div class="form-group half-width padding-left">
-                                                    <label for="card-cvc">Código de tarjeta <span
-                                                            class="required">*</span></label>
-                                                    <input id="card-cvc" class="form-control" type="tel" maxlength="4"
-                                                        placeholder="CVC">
-                                                </div>
-                                                <a href="./confirmation.html" class="btn btn-main mt-20">Realizar
-                                                    pedido</a>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="product-checkout-details">
-                                <div class="block">
-                                    <h4 class="widget-title">Resumen del pedido</h4>
-                                    <div class="media product-card">
-                                        <a class="pull-left" href="./art0009.html">
-                                            <img class="media-object" src="../assets/img/image01co.png"
-                                                alt="Taza cerámica 350cc diseño Chanel" />
-                                        </a>
-                                        <div class="media-body">
-                                            <h4 class="media-heading"><a href="./art0009.html">Taza cerámica 350cc
-                                                    diseño Chanel</a></h4>
-                                            <p class="price">1 x $15.53</p>
-                                            <span class="remove">Eliminar</span>
-                                        </div>
-                                    </div>
-                                    <div class="discount-code">
-                                        <p>Tenés un descuento? <a data-toggle="modal" data-target="#coupon-modal"
-                                                href="#!">insértelo aquí</a></p>
-                                    </div>
-                                    <ul class="summary-prices">
-                                        <li>
-                                            <span>IVA (21%):</span>
-                                            <span class="price">$3.26</span>
-                                        </li>
-                                        <li>
-                                            <span>País (8%):</span>
-                                            <span class="price">$1.24</span>
-                                        </li>
-                                        <li>
-                                            <span>Ganancia (30%):</span>
-                                            <span class="price">$4.66</span>
-                                        </li>
-                                        <li>
-                                            <span>IIBB Buenos Aires (2%):</span>
-                                            <span class="price">$0.31</span>
-                                        </li>
-                                        <li>
-                                            <span>Cupón de descuento:</span>
-                                            <span class="price">-$5.00</span>
-                                        </li>
-                                        <li>
-                                            <span>Subtotal:</span>
-                                            <span class="price">$20.00</span>
-                                        </li>
-                                        <li>
-                                            <span>Envío:</span>
-                                            <span>Free</span>
-                                        </li>
-                                    </ul>
-                                    <div class="summary-total">
-                                        <span>Total</span>
-                                        <span>$20.00</span>
-                                    </div>
-                                    <div class="verified-icon">
-                                        <img src="../assets/img/verified.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+import React, { useState } from 'react';
+
+export default function Checkout() {
+  const [couponCode, setCouponCode] = useState('');
+
+  return (
+    <main>
+      <div className="page-wrapper">
+        <div className="checkout shopping">
+          <div className="container mx-auto p-6">
+            <div className="flex flex-wrap -mx-4">
+              <div className="w-full md:w-2/3 px-4">
+                {/* Billing Details */}
+                <div className="block billing-details mb-6 p-6 bg-gray-100 rounded">
+                  <h4 className="text-xl font-semibold mb-4">Detalles de facturación</h4>
+                  <form className="space-y-4">
+                    <div className="form-group">
+                      <label htmlFor="full_name" className="block mb-1">Nombre completo</label>
+                      <input type="text" className="form-control w-full px-4 py-2 border rounded" id="full_name" placeholder="" />
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="coupon-modal" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <input class="form-control" type="text" placeholder="Introduce el código de cupón">
-                            </div>
-                            <button type="submit" class="btn btn-main">Aplicar cupón</button>
-                        </form>
+                    <div className="form-group">
+                      <label htmlFor="user_address" className="block mb-1">Dirección</label>
+                      <input type="text" className="form-control w-full px-4 py-2 border rounded" id="user_address" placeholder="" />
                     </div>
+                    <div className="flex flex-wrap -mx-2">
+                      <div className="form-group w-1/2 px-2">
+                        <label htmlFor="user_post_code" className="block mb-1">Código postal</label>
+                        <input type="text" className="form-control w-full px-4 py-2 border rounded" id="user_post_code" />
+                      </div>
+                      <div className="form-group w-1/2 px-2">
+                        <label htmlFor="user_city" className="block mb-1">Ciudad</label>
+                        <input type="text" className="form-control w-full px-4 py-2 border rounded" id="user_city" />
+                      </div>
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="user_country" className="block mb-1">País</label>
+                      <input type="text" className="form-control w-full px-4 py-2 border rounded" id="user_country" placeholder="" />
+                    </div>
+                  </form>
                 </div>
+
+                {/* Payment Method */}
+                <div className="block p-6 bg-gray-100 rounded">
+                  <h4 className="text-xl font-semibold mb-4">Método de pago</h4>
+                  <p>Datos de la tarjeta de crédito (Pago seguro)</p>
+                  <form className="space-y-4">
+                    <div className="form-group">
+                      <label htmlFor="card-number" className="block mb-1">Número de tarjeta <span className="text-red-500">*</span></label>
+                      <input id="card-number" className="form-control w-full px-4 py-2 border rounded" type="tel" placeholder="•••• •••• •••• ••••" />
+                    </div>
+                    <div className="flex flex-wrap -mx-2">
+                      <div className="form-group w-1/2 px-2">
+                        <label htmlFor="card-expiry" className="block mb-1">Expiración (MM/AA) <span className="text-red-500">*</span></label>
+                        <input id="card-expiry" className="form-control w-full px-4 py-2 border rounded" type="tel" placeholder="MM / AA" />
+                      </div>
+                      <div className="form-group w-1/2 px-2">
+                        <label htmlFor="card-cvc" className="block mb-1">Código de tarjeta <span className="text-red-500">*</span></label>
+                        <input id="card-cvc" className="form-control w-full px-4 py-2 border rounded" type="tel" placeholder="CVC" />
+                      </div>
+                    </div>
+                    <button className="btn btn-main mt-4 w-full py-2 bg-blue-600 text-white rounded" type="button">
+                      Realizar pedido
+                    </button>
+                  </form>
+                </div>
+              </div>
+
+              {/* Order Summary */}
+              <div className="w-full md:w-1/3 px-4">
+                <div className="product-checkout-details">
+                  <div className="block p-6 bg-gray-100 rounded">
+                    <h4 className="text-xl font-semibold mb-4">Resumen del pedido</h4>
+                    <div className="media product-card flex items-center mb-4">
+                      <a href="./art0009.html" className="flex-shrink-0 mr-4">
+                        <img src="../assets/img/image01co.png" alt="Taza cerámica 350cc diseño Chanel" className="w-16 h-16" />
+                      </a>
+                      <div>
+                        <h4 className="text-lg font-semibold"><a href="./art0009.html">Taza cerámica 350cc diseño Chanel</a></h4>
+                        <p className="text-gray-600">1 x $15.53</p>
+                        <span className="text-sm text-red-500 cursor-pointer">Eliminar</span>
+                      </div>
+                    </div>
+
+                    {/* Summary Prices */}
+                    <ul className="summary-prices space-y-2">
+                      <li className="flex justify-between"><span>IVA (21%):</span><span className="price">$3.26</span></li>
+                      <li className="flex justify-between"><span>País (8%):</span><span className="price">$1.24</span></li>
+                      <li className="flex justify-between"><span>Ganancia (30%):</span><span className="price">$4.66</span></li>
+                      <li className="flex justify-between"><span>IIBB Buenos Aires (2%):</span><span className="price">$0.31</span></li>
+                      <li className="flex justify-between"><span>Cupón de descuento:</span><span className="price">-$5.00</span></li>
+                      <li className="flex justify-between"><span>Subtotal:</span><span className="price">$20.00</span></li>
+                      <li className="flex justify-between"><span>Envío:</span><span>Gratis</span></li>
+                    </ul>
+
+                    <div className="summary-total flex justify-between mt-4 border-t pt-2 text-lg font-semibold">
+                      <span>Total</span>
+                      <span>$20.00</span>
+                    </div>
+                    <div className="verified-icon mt-4">
+                      <img src="../assets/img/verified.png" alt="Verified Icon" className="w-8 h-8" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+
+        {/* Modal */}
+        <div className={`modal ${couponCode ? 'fade show' : ''}`} id="coupon-modal">
+          <div className="modal-dialog">
+            <div className="modal-content p-6 bg-white rounded">
+              <div className="modal-body">
+                <form
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    setCouponCode('');
+                  }}
+                >
+                  <div className="form-group mb-4">
+                    <input
+                      className="form-control w-full px-4 py-2 border rounded"
+                      type="text"
+                      placeholder="Introduce el código de cupón"
+                      value={couponCode}
+                      onChange={(e) => setCouponCode(e.target.value)}
+                    />
+                  </div>
+                  <button type="submit" className="btn btn-main w-full py-2 bg-blue-600 text-white rounded">
+                    Aplicar cupón
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+  );
+}

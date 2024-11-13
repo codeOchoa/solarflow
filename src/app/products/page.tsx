@@ -1,297 +1,102 @@
-        <!-- Grid -->
-        <section class="py-5">
-            <h4 class="h4 fw-bolder px-4 px-lg-5 mt-5">Productos destacados</h4>
-            <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                    <div class="col me-3 mb-5 ms-3 p-0 shadow-box">
-                        <div class="card h-100">
-                            <a href="./art0001.html" target="_self">
-                                <img class="card-img-top" src="./assets/img/table01tn.jpg"
-                                    alt="Taza 250cc c/Tabla de Madera" /></a>
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <a class="text-decoration-none text-dark" href="./art0001.html"
-                                        title="Taza 250cc c/Tabla de Madera" aria-label="Taza 250cc c/Tabla de Madera"
-                                        target="_self">
-                                        <h5 class="fw-bolder">Taza 250cc + Tabla de Madera</h5>
-                                    </a>
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                    </div>
-                                    <span>$5.56</span>
-                                </div>
-                            </div>
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-main mt-auto" href="./cart.html"
-                                        title="Compra rápida de Taza 250cc c/Tabla de Madera"
-                                        aria-label="Compra rápida de Taza 250cc c/Tabla de Madera"
-                                        target="_self">Agregar al
-                                        carrito</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col me-3 mb-5 ms-3 p-0 shadow-box">
-                        <div class="card h-100">
-                            <div class="badge badge-card-m bg-dark text-white position-absolute">
-                                Sale</div>
-                            <a href="./art0002.html" target="_self">
-                                <img class="card-img-top" src="./assets/img/forest01tn.jpg"
-                                    alt="Taza 325cc Diseño" /></a>
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <a class="text-decoration-none text-dark" href="./art0002.html"
-                                        title="Taza 325cc Diseño" aria-label="Taza 325cc Diseño" target="_self">
-                                        <h5 class="fw-bolder">Taza 325cc Diseño</h5>
-                                    </a>
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                    </div>
-                                    <span class="text-muted text-decoration-line-through">$6.49</span>
-                                    <span>$5.49</span>
-                                </div>
-                            </div>
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-main mt-auto" href="./cart.html"
-                                        title="Compra rápida de Taza 325cc Diseño"
-                                        aria-label="Compra rápida de Taza 325cc Diseño" target="_self">Agregar al
-                                        carrito</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col me-3 mb-5 ms-3 p-0 shadow-box">
-                        <div class="card h-100">
-                            <div class="badge badge-card-m bg-dark text-white position-absolute">
-                                Sale</div>
-                            <a href="./art0003.html" target="_self">
-                                <img class="card-img-top" src="./assets/img/flower01tn.jpg"
-                                    alt="Pocillo 150cc expreso porcelana gastronómica" />
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <a class="text-decoration-none text-dark" href="./art0003.html"
-                                            title="Pocillo 150cc expreso porcelana gastronómica"
-                                            aria-label="Pocillo Café Expreso Porcelana Gastronómica" target="_self">
-                                            <h5 class="fw-bolder">Pocillo 150cc expreso porcelana gastronómica</h5>
-                                        </a>
-                                        <div class="d-flex justify-content-center small text-warning mb-2">
-                                            <div class="bi bi-star-fill"></div>
-                                            <div class="bi bi-star-fill"></div>
-                                            <div class="bi bi-star-fill"></div>
-                                            <div class="bi bi-star-fill"></div>
-                                            <div class="bi bi-star-fill"></div>
-                                        </div>
-                                        <span class="text-muted text-decoration-line-through">$2.37</span>
-                                        <span>$1.37</span>
-                                    </div>
-                                </div>
-                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-main mt-auto" href="./cart.html"
-                                            title="Compra rápida de Pocillo 150cc expreso porcelana gastronómica"
-                                            aria-label="Compra rápida de Pocillo 150cc expreso porcelana gastronómica"
-                                            target="_self">Agregar
-                                            al carrito</a></div>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="col me-3 mb-5 ms-3 p-0 shadow-box">
-                        <div class="card h-100">
-                            <a href="./art0004.html" target="_self">
-                                <img class="card-img-top" src="./assets/img/coffee11tn.jpg"
-                                    alt="Taza 290cc c/Plato Arte Latte" /></a>
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <a class="text-decoration-none text-dark" href="./art0004.html"
-                                        title="Taza 290cc c/Plato Arte Latte" aria-label="Taza 290cc + plato arte latte"
-                                        target="_self">
-                                        <h5 class="fw-bolder">Taza 290cc + plato arte latte</h5>
-                                    </a>
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                    </div>
-                                    <span>$7.49</span>
-                                </div>
-                            </div>
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-main mt-auto" href="./cart.html"
-                                        title="Compra rápida de Taza 290cc + plato arte latte"
-                                        aria-label="Compra rápida de Taza 290cc + plato arte latte"
-                                        target="_self">Agregar al
-                                        carrito</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col me-3 mb-5 ms-3 p-0 shadow-box">
-                        <div class="card h-100">
-                            <div class="badge badge-card-m bg-dark text-white position-absolute">
-                                Sale</div>
-                            <a href="./art0005.html" target="_self">
-                                <img class="card-img-top" src="./assets/img/teapot01tn.jpg"
-                                    alt="Tetera Cerámica Retro" /></a>
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <a class="text-decoration-none text-dark" href="./art0005.html"
-                                        title="Tetera Cerámica Retro" aria-label="Tetera Cerámica Retro" target="_self">
-                                        <h5 class="fw-bolder">Tetera cerámica 500cc retro</h5>
-                                    </a>
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star"></div>
-                                    </div>
-                                    <span class="text-muted text-decoration-line-through">$4.43</span>
-                                    <span>$3.43</span>
-                                </div>
-                            </div>
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-main mt-auto" href="./cart.html"
-                                        title="Compra rápida de Tetera Cerámica Retro"
-                                        aria-label="Compra rápida de Tetera Cerámica Retro" target="_self">Agregar al
-                                        carrito</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col me-3 mb-5 ms-3 p-0 shadow-box">
-                        <div class="card h-100">
-                            <a href="./art0006.html" target="_self">
-                                <img class="card-img-top" src="./assets/img/coffee06tn.jpg"
-                                    alt="Taza Cerámica + Cuchara" /></a>
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <a class="text-decoration-none text-dark" href="./art0006.html"
-                                        title="Taza Cerámica + Cuchara" aria-label="Taza Cerámica + Cuchara"
-                                        target="_self">
-                                        <h5 class="fw-bolder">Taza cerámica 350cc + cuchara</h5>
-                                    </a>
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                    </div>
-                                    <span>$7.21</span>
-                                </div>
-                            </div>
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-main mt-auto" href="./cart.html"
-                                        title="Compra rápida de Taza Cerámica + Cuchara"
-                                        aria-label="Compra rápida de Taza Cerámica + Cuchara" target="_self">Agregar al
-                                        carrito</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col me-3 mb-5 ms-3 p-0 shadow-box">
-                        <div class="card h-100">
-                            <div class="badge bg-dark text-white position-absolute">
-                                Sale</div>
-                            <a href="./art0007.html" target="_self">
-                                <img class="card-img-top" src="./assets/img/tea-cup02tn.jpg"
-                                    alt="Taza de te 230cc + plato + cuchara" /></a>
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <a class="text-decoration-none text-dark" href="./art0007.html"
-                                        title="Taza de te 230cc + plato + cuchara"
-                                        aria-label="Taza de te 230cc + plato + cuchara" target="_self">
-                                        <h5 class="fw-bolder">Taza de te 230cc + plato + cuchara</h5>
-                                    </a>
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star"></div>
-                                        <div class="bi bi-star"></div>
-                                    </div>
-                                    <span class="text-muted text-decoration-line-through">$44.99</span>
-                                    <span>$39.30</span>
-                                </div>
-                            </div>
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-main mt-auto" href="./cart.html"
-                                        title="Compra rápida de Taza de te 230cc + plato + cuchara"
-                                        aria-label="Compra rápida de Taza de te 230cc + plato + cuchara"
-                                        target="_self">Agregar al
-                                        carrito</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col me-3 mb-5 ms-3 p-0 shadow-box">
-                        <div class="card h-100">
-                            <a href="./art0008.html" target="_self">
-                                <img class="card-img-top" src="./assets/img/coffee04tn.jpg"
-                                    alt="Taza cerámica 350cc gaspeada" /></a>
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <a class="text-decoration-none text-dark" href="./art0008.html"
-                                        title="Taza cerámica 350cc gaspeada" aria-label="Taza cerámica 350cc gaspeada"
-                                        target="_self">
-                                        <h5 class="fw-bolder">Taza cerámica 350cc gaspeada</h5>
-                                    </a>
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star"></div>
-                                    </div>
-                                    <span>$3.33</span>
-                                </div>
-                            </div>
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-main mt-auto" href="./cart.html"
-                                        title="Compra rápida de Taza cerámica 350cc gaspeada"
-                                        aria-label="Compra rápida de Taza cerámica 350cc gaspeada"
-                                        target="_self">Agregar al
-                                        carrito</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col me-3 mb-5 ms-3 p-0 shadow-box">
-                        <div class="card h-100">
-                            <a href="./art0009.html" target="_self">
-                                <img class="card-img-top" src="./assets/img/image01tn.jpg"
-                                    alt="Taza cerámica 350cc diseño Chanel" /></a>
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <a class="text-decoration-none text-dark" href="./art0009.html"
-                                        title="Taza cerámica 350cc diseño Chanel"
-                                        aria-label="Taza cerámica 350cc diseño Chanel" target="_self">
-                                        <h5 class="fw-bolder">Taza cerámica 350cc diseño Chanel</h5>
-                                    </a>
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                        <div class="bi bi-star-fill"></div>
-                                    </div>
-                                    <span>$15.53</span>
-                                </div>
-                            </div>
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-main mt-auto" href="./cart.html"
-                                        title="Compra rápida de Taza cerámica 350cc diseño Chanel"
-                                        aria-label="Compra rápida de Taza cerámica 350cc diseño Chanel"
-                                        target="_self">Agregar al
-                                        carrito</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+import { Box, Container, Heading, Text, Button, Image, Badge, VStack, HStack } from "@chakra-ui/react";
+import Link from "next/link";
+import { StarIcon } from "@chakra-ui/icons";
+
+export default function FeaturedProducts() {
+  const products = [
+    {
+      id: "art0001",
+      title: "Taza 250cc + Tabla de Madera",
+      imageUrl: "/assets/img/table01tn.jpg",
+      price: 5.56,
+      link: "/art0001",
+      oldPrice: null,
+      sale: false,
+    },
+    {
+      id: "art0002",
+      title: "Taza 325cc Diseño",
+      imageUrl: "/assets/img/forest01tn.jpg",
+      price: 5.49,
+      oldPrice: 6.49,
+      link: "/art0002",
+      sale: true,
+    },
+    {
+      id: "art0003",
+      title: "Pocillo 150cc Expreso Porcelana Gastronómica",
+      imageUrl: "/assets/img/flower01tn.jpg",
+      price: 1.37,
+      oldPrice: 2.37,
+      link: "/art0003",
+      sale: true,
+    },
+  ];
+
+  return (
+    <Box as="section" py={10} bg="gray.50">
+      <Heading as="h4" size="md" fontWeight="bold" px={{ base: 4, lg: 10 }} mb={8}>
+        Productos destacados
+      </Heading>
+      <Container maxW="container.xl">
+        <HStack spacing={8} wrap="wrap" justify="center">
+          {products.map((product) => (
+            <Box
+              key={product.id}
+              borderWidth="1px"
+              rounded="lg"
+              shadow="lg"
+              position="relative"
+              width={{ base: "100%", md: "48%", lg: "23%" }}
+              bg="white"
+            >
+              {product.sale && (
+                <Badge position="absolute" top={2} right={2} colorScheme="red">
+                  Sale
+                </Badge>
+              )}
+              <Link href={product.link}>
+                <Image
+                  src={product.imageUrl}
+                  alt={product.title}
+                  roundedTop="lg"
+                  width="100%"
+                  height="200px"
+                  objectFit="cover"
+                  cursor="pointer"
+                />
+              </Link>
+              <Box p={4}>
+                <VStack spacing={2} align="center">
+                  <Link href={product.link} passHref>
+                    <Text fontWeight="bold" as="h5" fontSize="lg" color="gray.800" noOfLines={2}>
+                      {product.title}
+                    </Text>
+                  </Link>
+                  <HStack spacing={1} color="yellow.500">
+                    {[...Array(5)].map((_, i) => (
+                      <StarIcon key={i} />
+                    ))}
+                  </HStack>
+                  <Text fontSize="lg" color="gray.800">
+                    {product.oldPrice && (
+                      <Text as="span" color="gray.500" textDecoration="line-through" mr={2}>
+                        ${product.oldPrice}
+                      </Text>
+                    )}
+                    ${product.price}
+                  </Text>
+                </VStack>
+              </Box>
+              <Box p={4} pt={0} textAlign="center">
+                <Button colorScheme="teal" mt="auto" as="a" href="/cart">
+                  Agregar al carrito
+                </Button>
+              </Box>
+            </Box>
+          ))}
+        </HStack>
+      </Container>
+    </Box>
+  );
+}

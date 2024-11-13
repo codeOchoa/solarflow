@@ -1,120 +1,76 @@
-    <main>
-        <section class="about section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img class="img-fluid img-fluid-m" src="../assets/img/content01.jpg">
-                    </div>
-                    <div class="col-md-6">
-                        <h2 class="mt-40">Acerca de nuestra tienda</h2>
-                        <p>Bienvenidos a nuestra tienda online, donde cada detalle cuenta y cada producto cuenta una
-                            historia. Somos apasionados por ofrecer artículos únicos que combinan diseño, calidad y
-                            funcionalidad. Nuestra selección incluye una amplia gama de tazas de cerámica, perfectas
-                            para disfrutar de tus bebidas favoritas con estilo, así como velas de soja artesanales que
-                            crean un ambiente cálido y acogedor en cualquier espacio. Además, ofrecemos una variedad de
-                            accesorios cuidadosamente seleccionados para complementar tu experiencia.
+import { Box, Container, Flex, Heading, Image, Text, Button, SimpleGrid, Center } from "@chakra-ui/react";
+import Link from "next/link";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { FaPlay } from "react-icons/fa";
 
-                            Creemos en la importancia de los pequeños placeres y en cómo pueden enriquecer nuestros
-                            días. Por eso, nos comprometemos a ofrecer productos que no solo sean bellos, sino también
-                            prácticos y sostenibles. Ya sea que estés buscando un regalo especial o simplemente quieras
-                            darte un capricho, nuestra tienda es el lugar perfecto para encontrar piezas que harán que
-                            tus momentos cotidianos sean aún más especiales.
+export default function AboutPage() {
+  return (
+    <Box as="main">
+      {/* Sección Acerca de */}
+      <Box as="section" py={10}>
+        <Container maxW="container.lg">
+          <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+            <Image src="/assets/img/content01.jpg" alt="Acerca de" borderRadius="md" objectFit="cover" />
+            <Box>
+              <Heading as="h2" size="lg" mt={{ base: 4, md: 10 }}>Acerca de nuestra tienda</Heading>
+              <Text mt={4}>
+                Bienvenidos a nuestra tienda online, donde cada detalle cuenta y cada producto cuenta una historia.
+                Somos apasionados por ofrecer artículos únicos que combinan diseño, calidad y funcionalidad.
+                Nuestra selección incluye una amplia gama de tazas de cerámica, velas de soja artesanales y una variedad de accesorios cuidadosamente seleccionados.
+                {/* Texto adicional */}
+              </Text>
+              <Link href="/contact" passHref>
+                <Button colorScheme="teal" mt={6} rightIcon={<ExternalLinkIcon />}>Descargar perfil de la empresa</Button>
+              </Link>
+            </Box>
+          </SimpleGrid>
 
-                            Nos enorgullece ofrecer un servicio al cliente excepcional y una experiencia de compra en
-                            línea fácil y segura. ¡Explora nuestra colección y descubre productos que reflejan tu estilo
-                            y personalidad!
-                        </p>
-                        <a href="contact.html" class="btn btn-main mt-20">Descargar perfil de la empresa</a>
-                    </div>
-                </div>
-                <div class="row mt-40">
-                    <div class="col mb-4 text-center">
-                        <img id="awards-m" src="../assets/icons/awards-logo01.svg" alt="Premio">
-                    </div>
-                    <div class="col mb-4 text-center">
-                        <img id="awards-m" src="../assets/icons/awards-logo02.svg" alt="Premio">
-                    </div>
-                    <div class="col mb-4 text-center">
-                        <img id="awards-m" src="../assets/icons/awards-logo03.svg" alt="Premio">
-                    </div>
-                    <div class="col mb-4 text-center">
-                        <img id="awards-m" src="../assets/icons/awards-logo04.svg" alt="Premio">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="team-members ">
-            <div class="container">
-                <div class="row">
-                    <div class="title">
-                        <h2>Miembros del equipo</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col mb-5">
-                        <div class="team-member align-items-center justify-content-center d-flex flex-column">
-                            <img class="team-img img-circle mb-3" src="../assets/img/team01.jpg">
-                            <h4>Pablo Ochoa</h4>
-                            <p>Founder</p>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="team-member align-items-center justify-content-center d-flex flex-column">
-                            <img class="team-img img-circle mb-3" src="../assets/img/team02.jpeg">
-                            <h4>Vicky Mondino</h4>
-                            <p>Developer</p>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="team-member align-items-center justify-content-center d-flex flex-column">
-                            <img class="team-img img-circle mb-3" src="../assets/img/team03.png">
-                            <h4>Boris Riback</h4>
-                            <p>Developer</p>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="team-member align-items-center justify-content-center d-flex flex-column">
-                            <img class="team-img img-circle mb-3" src="../assets/img/team04.png">
-                            <h4>Oswald Villano</h4>
-                            <p>Developer</p>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="team-member align-items-center justify-content-center d-flex flex-column">
-                            <img class="team-img img-circle mb-3" src="../assets/img/team05.png">
-                            <h4>Alejandra Piñeros</h4>
-                            <p>Graphic Designer</p>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="team-member align-items-center justify-content-center d-flex flex-column">
-                            <img class="team-img img-circle mb-3" src="../assets/img/team06.png">
-                            <h4>Facundo Perez</h4>
-                            <p>Developer</p>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="team-member align-items-center justify-content-center d-flex flex-column">
-                            <img class="team-img img-circle mb-3" src="../assets/img/team07.png">
-                            <h4>Maxi Pardo</h4>
-                            <p>Developer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+          <SimpleGrid columns={{ base: 2, md: 4 }} spacing={6} mt={10} textAlign="center">
+            <Image src="/assets/icons/awards-logo01.svg" alt="Premio" boxSize="80px" mx="auto" />
+            <Image src="/assets/icons/awards-logo02.svg" alt="Premio" boxSize="80px" mx="auto" />
+            <Image src="/assets/icons/awards-logo03.svg" alt="Premio" boxSize="80px" mx="auto" />
+            <Image src="/assets/icons/awards-logo04.svg" alt="Premio" boxSize="80px" mx="auto" />
+          </SimpleGrid>
+        </Container>
+      </Box>
 
+      {/* Sección de Miembros del Equipo */}
+      <Box as="section" py={10} bg="gray.50">
+        <Container maxW="container.lg">
+          <Heading as="h2" size="lg" textAlign="center" mb={6}>Miembros del equipo</Heading>
+          <SimpleGrid columns={{ base: 2, md: 4, lg: 5 }} spacing={8}>
+            {teamMembers.map((member, index) => (
+              <Box key={index} textAlign="center">
+                <Image src={member.image} alt={member.name} boxSize="100px" borderRadius="full" mx="auto" />
+                <Text fontWeight="bold" mt={4}>{member.name}</Text>
+                <Text color="gray.600">{member.role}</Text>
+              </Box>
+            ))}
+          </SimpleGrid>
+        </Container>
+      </Box>
 
-        <div class="section bg-1 text-center mt-50">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="title-presentation">Presentación</h2>
-                        <a class="play-icon" href="https://www.youtube.com/watch?v=U7Pkzk6O2Nw&ab_channel=Marko">
-                            <i class="bi bi-play"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+      {/* Sección de Presentación */}
+      <Box as="section" py={10} textAlign="center" bg="gray.100">
+        <Container maxW="container.sm">
+          <Heading as="h2" size="lg" mb={4}>Presentación</Heading>
+          <Center>
+            <Link href="https://www.youtube.com/watch?v=U7Pkzk6O2Nw&ab_channel=Marko" passHref>
+              <Button size="lg" colorScheme="teal" leftIcon={<FaPlay />}>Ver Video</Button>
+            </Link>
+          </Center>
+        </Container>
+      </Box>
+    </Box>
+  );
+}
+
+const teamMembers = [
+  { name: "Pablo Ochoa", role: "Founder", image: "/assets/img/team01.jpg" },
+  { name: "Vicky Mondino", role: "Developer", image: "/assets/img/team02.jpeg" },
+  { name: "Boris Riback", role: "Developer", image: "/assets/img/team03.png" },
+  { name: "Oswald Villano", role: "Developer", image: "/assets/img/team04.png" },
+  { name: "Alejandra Piñeros", role: "Graphic Designer", image: "/assets/img/team05.png" },
+  { name: "Facundo Perez", role: "Developer", image: "/assets/img/team06.png" },
+  { name: "Maxi Pardo", role: "Developer", image: "/assets/img/team07.png" },
+];

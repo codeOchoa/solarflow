@@ -1,58 +1,66 @@
-<main>
-        <!-- Confirmation -->
-        <section class="page-wrapper success-msg">
-            <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-6 col-md-offset-3">
-                        <div class="block text-center">
-                            <i class="check-m bi bi-check2-circle"></i>
-                            <h2 class="text-center">Gracias por tu pago!</h2>
-                            <p>Pronto te llegara un mail con el resumen de tu compra.</p>
-                            <a class="btn btn-main mt-20" href="../index.html">Seguir comprando</a>
-                        </div>
-                    </div>
-                </div>
+import React from "react";
+import { BiCheckCircle, BiGoogle, BiWhatsapp, BiFacebook, BiInstagram, BiTwitter, BiLinkedin } from "react-icons/bi";
+
+export default function Confirmation() {
+  return (
+    <main>
+      {/* Confirmation Section */}
+      <section className="page-wrapper success-msg py-12">
+        <div className="container mx-auto">
+          <div className="flex justify-center">
+            <div className="w-full md:w-1/2 text-center">
+              <BiCheckCircle className="text-green-500 text-6xl mx-auto" />
+              <h2 className="text-2xl font-semibold mt-4">Gracias por tu pago!</h2>
+              <p className="mt-2">Pronto te llegará un email con el resumen de tu compra.</p>
+              <a className="btn btn-main mt-6" href="../index.html">
+                Seguir comprando
+              </a>
             </div>
-        </section>
-        <!-- Coupon -->
-        <section class="mb-5">
-            <div class="container">
-                <div class="row">
-                    <div class="text-center col-md-8 col-8 offset-md-2 offset-2 offset-xxl-2 promotion-box">
-                        <img class="img-coupon-m my-4" src="../assets/img/gift_promo.png" alt="gift" />
-                        <h3 class="text-coupon-m">
-                            Tú y tu amigo obtienen un 30% de descuento en la próxima compra con un tope de reintegro de
-                            $5.00
-                        </h3>
-                        <p>Tu código promocional</p>
-                        <h1>CDOC2024</h1>
-                        <hr />
-                        <p>Compartir en</p>
-                        <div class="social-icons">
-                            <a href="mailto:pablo.m.ochoa@email.com" subject="Cupon descuento"
-                                body="Tengo un cupon descuento en Malec de 30%!" class="txt-deco-m text-white me-4" target="_blank">
-                                <i class="bi bi-google text-dark"></i>
-                            </a>
-                            <a href="https://walink.co/19bc0d" class="txt-deco-m text-white me-4" target="_blank">
-                                <i class="bi bi-whatsapp text-dark"></i>
-                            </a>
-                            <a href="https://www.facebook.com/profile.php?id=100091698780289"
-                                class="txt-deco-m text-white me-4" target="_blank">
-                                <i class="bi bi-facebook text-dark"></i>
-                            </a>
-                            <a href="https://www.instagram.com/malec_velas/" class="txt-deco-m text-white me-4" target="_blank">
-                                <i class="bi bi-instagram text-dark"></i>
-                            </a>
-                            <a href="https://x.com/PabloDKx" class="txt-deco-m text-white me-4" target="_blank">
-                                <i class="bi bi-twitter text-dark"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/pablo-ochoa-0b9428301/"
-                                class="txt-deco-m text-white me-4" target="_blank">
-                                <i class="bi bi-linkedin text-dark"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Coupon Section */}
+      <section className="my-12">
+        <div className="container mx-auto">
+          <div className="flex justify-center">
+            <div className="w-4/5 md:w-2/3 text-center promotion-box bg-gray-100 p-6 rounded-lg">
+              <img
+                className="img-coupon-m my-4 mx-auto"
+                src="../assets/img/gift_promo.png"
+                alt="gift"
+              />
+              <h3 className="text-lg font-semibold">
+                Tú y tu amigo obtienen un 30% de descuento en la próxima compra con un tope de reintegro de $5.00
+              </h3>
+              <p className="mt-2">Tu código promocional</p>
+              <h1 className="text-3xl font-bold mt-1">CDOC2024</h1>
+              <hr className="my-4" />
+              <p>Compartir en</p>
+              <div className="flex justify-center space-x-4 mt-4">
+                <a href="mailto:pablo.m.ochoa@email.com" target="_blank" rel="noopener noreferrer">
+                  <BiGoogle className="text-2xl text-dark hover:text-gray-600" />
+                </a>
+                <a href="https://walink.co/19bc0d" target="_blank" rel="noopener noreferrer">
+                  <BiWhatsapp className="text-2xl text-dark hover:text-gray-600" />
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100091698780289" target="_blank" rel="noopener noreferrer">
+                  <BiFacebook className="text-2xl text-dark hover:text-gray-600" />
+                </a>
+                <a href="https://www.instagram.com/malec_velas/" target="_blank" rel="noopener noreferrer">
+                  <BiInstagram className="text-2xl text-dark hover:text-gray-600" />
+                </a>
+                <a href="https://x.com/PabloDKx" target="_blank" rel="noopener noreferrer">
+                  <BiTwitter className="text-2xl text-dark hover:text-gray-600" />
+                </a>
+                <a href="https://www.linkedin.com/in/pablo-ochoa-0b9428301/" target="_blank" rel="noopener noreferrer">
+                  <BiLinkedin className="text-2xl text-dark hover:text-gray-600" />
+                </a>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
+  );
+}

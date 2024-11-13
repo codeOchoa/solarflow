@@ -1,89 +1,120 @@
-import { useState } from "react";
-import Link from "next/link";
+import React, { useState } from 'react';
+import Link from 'next/link';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState({ products: false, help: false });
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isSearchOpen, setSearchOpen] = useState(false);
 
-  const toggleDropdown = (name) => {
-    setIsDropdownOpen((prev) => ({ ...prev, [name]: !prev[name] }));
-  };
+  const toggleMenu = () => setMenuOpen(!isMenuOpen);
+  const toggleSearch = () => setSearchOpen(!isSearchOpen);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-gray-100 shadow-lg">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+    <nav className="navbar bg-light fixed-top">
+      <div className="container mx-auto px-4 lg:px-5 flex items-center justify-between">
         <Link href="#!">
-          <a className="text-lg font-semibold">Malec</a>
+          <a className="navbar-brand text-lg font-bold">Malec</a>
         </Link>
-        <div className="hidden lg:flex space-x-6">
-          <Link href="#!"><a className="text-gray-700">Inicio</a></Link>
-          <div className="relative">
-            <button
-              onClick={() => toggleDropdown("products")}
-              className="text-gray-700"
-            >
-              Productos
-            </button>
-            {isDropdownOpen.products && (
-              <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded">
-                <Link href="/pages/product"><a className="block px-4 py-2 text-gray-700 hover:bg-gray-200">Ver todos los productos</a></Link>
-                <hr className="border-gray-200" />
-                {["Sale", "Tazas", "Accesorios", "Colecciones", "Gift card", "Ofertas", "Preventa", "Envio gratis"].map((item, index) => (
-                  <Link key={index} href="/pages/404">
-                    <a className="block px-4 py-2 text-gray-700 hover:bg-gray-200">{item}</a>
+        
+        {/* Desktop Menu */}
+        <ul className="hidden lg:flex lg:items-center space-x-4">
+          <li><Link href="#!"><a className="nav-link">Inicio</a></Link></li>
+          <li className="relative group">
+            <button className="nav-link dropdown-toggle">Productos</button>
+            <ul className="dropdown-menu hidden group-hover:block absolute bg-white border rounded-lg shadow-lg mt-2">
+              {["Ver todos los productos", "Sale", "Tazas", "Accesorios", "Colecciones", "Gift card", "Ofertas", "Preventa", "Envio gratis"].map((item, index) => (
+                <li key={index}>
+                  <Link href={`./pages/${item === "Ver todos los productos" ? "product.html" : "404.html"}`}>
+                    <a className="dropdown-item px-4 py-2">{item}</a>
                   </Link>
-                ))}
-              </div>
-            )}
-          </div>
-          <Link href="/pages/about"><a className="text-gray-700">¿Quiénes somos?</a></Link>
-          <div className="relative">
-            <button
-              onClick={() => toggleDropdown("help")}
-              className="text-gray-700"
-            >
-              Ayuda
-            </button>
-            {isDropdownOpen.help && (
-              <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded">
-                {["Localizar mi producto", "Cambio de artículos", "Preguntas frecuentes"].map((item, index) => (
-                  <Link key={index} href="/pages/contact">
-                    <a className="block px-4 py-2 text-gray-700 hover:bg-gray-200">{item}</a>
+                </li>
+              ))}
+            </ul>
+          </li>
+          <li><Link href="./pages/about.html"><a className="nav-link">¿Quiénes somos?</a></Link></li>
+          <li className="relative group">
+            <button className="nav-link dropdown-toggle">Ayuda</button>
+            <ul className="dropdown-menu hidden group-hover:block absolute bg-white border rounded-lg shadow-lg mt-2">
+              {["Localizar mi producto", "Cambio de artículos", "Preguntas frecuentes"].map((item, index) => (
+                <li key={index}>
+                  <Link href={`./pages/${item === "Preguntas frecuentes" ? "404.html" : "contact.html"}`}>
+                    <a className="dropdown-item px-4 py-2">{item}</a>
                   </Link>
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
+                </li>
+              ))}
+            </ul>
+          </li>
+        </ul>
+
+        {/* Icons for search and cart */}
         <div className="flex items-center space-x-4">
+          {/* Search Icon */}
           <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden text-gray-700 focus:outline-none"
+            onClick={toggleSearch}
+            className="text-gray-500 hover:text-gray-800 lg:block hidden"
           >
             <i className="bi bi-search"></i>
           </button>
-          <Link href="/pages/cart">
-            <a className="relative">
-              <i className="bi bi-cart-fill"></i>
-              <span className="absolute top-0 right-0 bg-red-500 text-white rounded-full w-4 h-4 text-xs flex items-center justify-center">1</span>
+
+          {/* Cart Icon */}
+          <Link href="./pages/cart.html">
+            <a className="flex items-center text-gray-500 hover:text-gray-800">
+              <i className="bi-cart-fill"></i>
+              <span className="ml-1 badge bg-red-500 text-white rounded-full px-2">1</span>
             </a>
           </Link>
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden text-gray-700"
-          >
+
+          {/* Mobile Menu Toggle */}
+          <button onClick={toggleMenu} className="lg:hidden text-gray-500 hover:text-gray-800">
             <i className="bi bi-list"></i>
           </button>
         </div>
+
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="lg:hidden fixed inset-0 z-50 bg-gray-800 bg-opacity-75">
+            <div className="flex justify-between items-center p-4">
+              <form className="flex-grow">
+                <input type="search" placeholder="Buscar" className="form-control" />
+              </form>
+              <button onClick={toggleMenu} className="text-white">
+                <i className="bi bi-x-lg"></i>
+              </button>
+            </div>
+            <ul className="bg-white p-4 space-y-4">
+              <li><Link href="#!"><a className="block text-gray-800">Inicio</a></Link></li>
+              <li>
+                <button className="w-full text-left" onClick={() => toggleSubMenu('Productos')}>Productos</button>
+                <ul className="pl-4">
+                  {["Ver todos los productos", "Sale", "Tazas", "Accesorios", "Colecciones", "Gift card", "Ofertas", "Preventa", "Envio gratis"].map((item, index) => (
+                    <li key={index}><Link href={`./pages/${item === "Ver todos los productos" ? "product.html" : "404.html"}`}><a>{item}</a></Link></li>
+                  ))}
+                </ul>
+              </li>
+              <li><Link href="./pages/about.html"><a className="block text-gray-800">¿Quiénes somos?</a></Link></li>
+              <li>
+                <button className="w-full text-left" onClick={() => toggleSubMenu('Ayuda')}>Ayuda</button>
+                <ul className="pl-4">
+                  {["Localizar mi producto", "Cambio de artículos", "Preguntas frecuentes"].map((item, index) => (
+                    <li key={index}><Link href={`./pages/${item === "Preguntas frecuentes" ? "404.html" : "contact.html"}`}><a>{item}</a></Link></li>
+                  ))}
+                </ul>
+              </li>
+            </ul>
+          </div>
+        )}
+        
+        {/* Search Form */}
+        {isSearchOpen && (
+          <div className="absolute top-full mt-2 bg-white rounded-lg shadow-lg p-4 w-full lg:w-1/3 z-10">
+            <form className="flex">
+              <input type="search" placeholder="Buscar" className="form-control" />
+              <button onClick={toggleSearch} className="ml-2 text-gray-500">
+                <i className="bi bi-x-lg"></i>
+              </button>
+            </form>
+          </div>
+        )}
       </div>
-      {isOpen && (
-        <div className="lg:hidden bg-gray-100 shadow-lg">
-          <Link href="#!"><a className="block px-4 py-2 text-gray-700">Inicio</a></Link>
-          <Link href="/pages/product"><a className="block px-4 py-2 text-gray-700">Productos</a></Link>
-          <Link href="/pages/about"><a className="block px-4 py-2 text-gray-700">¿Quiénes somos?</a></Link>
-          <Link href="/pages/contact"><a className="block px-4 py-2 text-gray-700">Ayuda</a></Link>
-        </div>
-      )}
     </nav>
   );
 };

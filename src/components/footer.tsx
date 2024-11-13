@@ -1,86 +1,74 @@
+import { Box, Container, Divider, Flex, Heading, Link, Stack, Text } from '@chakra-ui/react';
+import { FaFacebookF, FaTwitter, FaGoogle, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
+
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white p-4 text-center">
-      <div className="container">
+    <Box as="footer" bg="gray.800" color="white" py={8}>
+      <Container maxW="container.lg">
         {/* Sección de enlaces */}
-        <section className="mt-5">
-          <div className="row justify-center text-center pt-5">
-            <div className="col-md-2">
-              <h6 className="uppercase font-bold">
-                <a href="#!" className="text-white no-underline">Inicio</a>
-              </h6>
-            </div>
-            <div className="col-md-2">
-              <h6 className="uppercase font-bold">
-                <a href="/pages/product" className="text-white no-underline">Productos</a>
-              </h6>
-            </div>
-            <div className="col-md-2">
-              <h6 className="uppercase font-bold">
-                <a href="/pages/about" className="text-white no-underline">¿Quienes somos?</a>
-              </h6>
-            </div>
-            <div className="col-md-2">
-              <h6 className="uppercase font-bold">
-                <a href="/pages/contact" className="text-white no-underline">Contacto</a>
-              </h6>
-            </div>
-          </div>
-        </section>
+        <Stack spacing={8} mt={5}>
+          <Flex justify="center" pt={5}>
+            <Link href="#!" fontWeight="bold" textTransform="uppercase" mx={4}>
+              Inicio
+            </Link>
+            <Link href="/pages/product.html" fontWeight="bold" textTransform="uppercase" mx={4}>
+              Productos
+            </Link>
+            <Link href="/pages/about.html" fontWeight="bold" textTransform="uppercase" mx={4}>
+              ¿Quienes somos?
+            </Link>
+            <Link href="/pages/contact.html" fontWeight="bold" textTransform="uppercase" mx={4}>
+              Contacto
+            </Link>
+          </Flex>
+        </Stack>
 
-        <hr className="my-5" />
+        <Divider my={5} borderColor="gray.600" />
 
-        {/* Sección de descripción */}
-        <section className="mb-5">
-          <div className="row justify-center">
-            <div className="lg:w-8/12">
-              <p>
-                Empresa especializada en cerámica, velas de soja aromáticas y con el mejor precio y calidad del mercado.
-              </p>
-            </div>
-          </div>
-        </section>
+        {/* Descripción */}
+        <Stack spacing={5} mb={5} textAlign="center">
+          <Text maxW="lg" mx="auto">
+            Empresa especializada en cerámica, velas de soja aromáticas y con el mejor precio y calidad del mercado.
+          </Text>
+        </Stack>
 
-        {/* Sección de redes sociales */}
-        <section className="text-center mb-5">
-          <a href="https://www.facebook.com/profile.php?id=100091698780289" className="text-white mx-4 no-underline">
-            <i className="bi bi-facebook"></i>
-          </a>
-          <a href="https://x.com/PabloDKx" className="text-white mx-4 no-underline">
-            <i className="bi bi-twitter"></i>
-          </a>
-          <a href="https://www.google.com.ar/" className="text-white mx-4 no-underline">
-            <i className="bi bi-google"></i>
-          </a>
-          <a href="https://www.instagram.com/malec_velas/" className="text-white mx-4 no-underline">
-            <i className="bi bi-instagram"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/pablo-ochoa-0b9428301/" className="text-white mx-4 no-underline">
-            <i className="bi bi-linkedin"></i>
-          </a>
-          <a href="https://github.com/codeOchoa" className="text-white mx-4 no-underline">
-            <i className="bi bi-github"></i>
-          </a>
-        </section>
-      </div>
+        {/* Redes sociales */}
+        <Flex justify="center" mb={5}>
+          <Link href="https://www.facebook.com/profile.php?id=100091698780289" mx={2}>
+            <FaFacebookF />
+          </Link>
+          <Link href="https://x.com/PabloDKx" mx={2}>
+            <FaTwitter />
+          </Link>
+          <Link href="https://www.google.com.ar/" mx={2}>
+            <FaGoogle />
+          </Link>
+          <Link href="https://www.instagram.com/malec_velas/" mx={2}>
+            <FaInstagram />
+          </Link>
+          <Link href="https://www.linkedin.com/in/pablo-ochoa-0b9428301/" mx={2}>
+            <FaLinkedin />
+          </Link>
+          <Link href="https://github.com/codeOchoa" mx={2}>
+            <FaGithub />
+          </Link>
+        </Flex>
 
-      {/* Derechos y enlaces adicionales */}
-      <div className="p-3">
-        <span>&copy; 2024 Copyright: Malec. Todos los derechos reservados.</span>
-        <div>
-          Defensa de las y los consumidores. Para reclamos{' '}
-          <a
-            href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario"
-            className="text-white no-underline"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            ingrese aquí
-          </a>
-        </div>
-        <a href="https://kissaccesorios.empretienda.com.ar/" className="text-white no-underline">Test</a>
-      </div>
-    </footer>
+        {/* Derechos de autor y enlace de defensa del consumidor */}
+        <Box textAlign="center" p={3} borderTop="1px" borderColor="gray.600">
+          <Text>&copy; 2024 Copyright: Malec. Todos los derechos reservados.</Text>
+          <Text>
+            Defensa de las y los consumidores. Para reclamos{' '}
+            <Link color="blue.400" href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario" isExternal>
+              ingrese aquí
+            </Link>
+          </Text>
+          <Link color="blue.400" href="https://kissaccesorios.empretienda.com.ar/" isExternal>
+            Test
+          </Link>
+        </Box>
+      </Container>
+    </Box>
   );
 };
 
