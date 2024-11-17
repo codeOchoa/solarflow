@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { BiCheckCircle, BiGoogle, BiWhatsapp, BiFacebook, BiInstagram, BiTwitter, BiLinkedin } from "react-icons/bi";
 

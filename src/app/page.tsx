@@ -3,8 +3,8 @@ import Nav from '@/components/nav';
 import Carousel from '@/components/carousel';
 import ProductCard from '@/components/productCard';
 import Footer from '@/components/footer';
-import ScrollTopWidget from '@/components/ScrollTopWidget';
-import WhatsAppWidget from '@/components/WhatsAppWidget';
+import ScrollTopWidget from '@/components/scrollTopWidget';
+import WhatsAppWidget from '@/components/whatsAppWidget';
 
 export default function HomePage() {
   return (

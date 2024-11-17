@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from 'react';
 import { Input, Textarea, Button, Box, Container, Flex, Heading, Icon, Link, VStack } from '@chakra-ui/react';
 import { FaFacebook, FaTwitter, FaDribbble, FaGoogle, FaPinterest } from 'react-icons/fa';
