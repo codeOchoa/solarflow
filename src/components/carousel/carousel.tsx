@@ -4,10 +4,10 @@ import { useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const images = [
-  { src: '/assets/img/carousel01.jpg', alt: 'Taza', caption: 'Crea momentos especiales' },
-  { src: '/assets/img/carousel02.jpg', alt: 'Taza', caption: 'Crea momentos especiales' },
-  { src: '/assets/img/carousel03.jpg', alt: 'Taza', caption: 'Crea momentos especiales' },
-  { src: '/assets/img/carousel04.jpg', alt: 'Taza', caption: 'Crea momentos especiales' },
+  { src: '/public/products/carousel01.jpg', alt: 'Paneles', caption: 'Crea momentos especiales' },
+  { src: '/public/products/carousel02.jpg', alt: 'Inversores', caption: 'Crea momentos especiales' },
+  { src: '/public/products/carousel03.jpg', alt: 'Baterias', caption: 'Crea momentos especiales' },
+  { src: '/public/products/carousel04.jpg', alt: 'Sample', caption: 'Crea momentos especiales' },
 ];
 
 const Carousel = () => {

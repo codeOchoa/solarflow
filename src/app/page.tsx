@@ -1,8 +1,8 @@
 // src/app/page.tsx
 import Nav from '@/components/nav';
-import Carousel from '@/components/carousel';
-import ProductCard from '@/components/productCard';
-import Footer from '@/components/footer';
+import Carousel from '@/components/carousel/carousel';
+import ProductCard from '@/components/productCard/productCard';
+import Footer from '@/components/footer/footer';
 import ScrollTopWidget from '@/components/scrollTopWidget';
 import WhatsAppWidget from '@/components/whatsAppWidget';
 

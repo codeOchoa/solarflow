@@ -1,5 +1,5 @@
 import { Button, Badge } from "@chakra-ui/react";
-import { BiCartFill } from "react-icons/bi";
+import { BiSolidCartAdd } from "react-icons/bi";
 
 export default function ProductPage() {
   return (
@@ -30,7 +30,7 @@ export default function ProductPage() {
                   max="99"
                   defaultValue="1"
                 />
-                <Button colorScheme="teal" leftIcon={<BiCartFill />}>
+                <Button colorScheme="teal" leftIcon={<BiSolidCartAdd />}>
                   Agregar al carrito
                 </Button>
               </div>

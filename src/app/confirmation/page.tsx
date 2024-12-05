@@ -1,7 +1,5 @@
-"use client";
-
 import React from "react";
-import { BiCheckCircle, BiGoogle, BiWhatsapp, BiFacebook, BiInstagram, BiTwitter, BiLinkedin } from "react-icons/bi";
+import { BiCheckCircle, BiLogoGoogle, BiLogoWhatsapp, BiLogoFacebook, BiLogoInstagram, BiLogoTwitter, BiLogoLinkedin } from "react-icons/bi";
 
 export default function Confirmation() {
   return (
@@ -41,22 +39,22 @@ export default function Confirmation() {
               <p>Compartir en</p>
               <div className="flex justify-center space-x-4 mt-4">
                 <a href="mailto:pablo.m.ochoa@email.com" target="_blank" rel="noopener noreferrer">
-                  <BiGoogle className="text-2xl text-dark hover:text-gray-600" />
+                  <BiLogoGoogle className="text-2xl text-dark hover:text-gray-600" />
                 </a>
                 <a href="https://walink.co/19bc0d" target="_blank" rel="noopener noreferrer">
-                  <BiWhatsapp className="text-2xl text-dark hover:text-gray-600" />
+                  <BiLogoWhatsapp className="text-2xl text-dark hover:text-gray-600" />
                 </a>
                 <a href="https://www.facebook.com/profile.php?id=100091698780289" target="_blank" rel="noopener noreferrer">
-                  <BiFacebook className="text-2xl text-dark hover:text-gray-600" />
+                  <BiLogoFacebook className="text-2xl text-dark hover:text-gray-600" />
                 </a>
                 <a href="https://www.instagram.com/malec_velas/" target="_blank" rel="noopener noreferrer">
-                  <BiInstagram className="text-2xl text-dark hover:text-gray-600" />
+                  <BiLogoInstagram className="text-2xl text-dark hover:text-gray-600" />
                 </a>
                 <a href="https://x.com/PabloDKx" target="_blank" rel="noopener noreferrer">
-                  <BiTwitter className="text-2xl text-dark hover:text-gray-600" />
+                  <BiLogoTwitter className="text-2xl text-dark hover:text-gray-600" />
                 </a>
                 <a href="https://www.linkedin.com/in/pablo-ochoa-0b9428301/" target="_blank" rel="noopener noreferrer">
-                  <BiLinkedin className="text-2xl text-dark hover:text-gray-600" />
+                  <BiLogoLinkedin className="text-2xl text-dark hover:text-gray-600" />
                 </a>
               </div>
             </div>

@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from "react"
 import { formatter } from '../utils/helpers'
-import ProductOptions from "./productOptions"
+import ProductOptions from "../productOptions/productOptions"
 import { CartContext } from "../context/shopContext"
 import axios from "axios"
 import useSWR from 'swr'

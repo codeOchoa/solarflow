@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import ProductForm from './ProductForm'
+import ProductForm from '../productForm/productForm'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Navigation, Pagination } from 'swiper'
 import RecommendedList from './RecommendedList'

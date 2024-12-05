@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { Input, Textarea, Button, Box, Container, Flex, Heading, Icon, Link, VStack } from '@chakra-ui/react';
 import { FaFacebook, FaTwitter, FaDribbble, FaGoogle, FaPinterest } from 'react-icons/fa';
-import { BiHouse, BiPhone, BiGlobe, BiEnvelope } from 'react-icons/bi';
+import { BiSolidBuildingHouse, BiPhone, BiGlobe, BiEnvelope } from 'react-icons/bi';
 
 export default function ContactPage() {
   const [status, setStatus] = useState('');
@@ -47,7 +47,7 @@ export default function ContactPage() {
 
             <VStack mt={4} spacing={2}>
               <Flex align="center">
-                <Icon as={BiHouse} mr={2} />
+                <Icon as={BiSolidBuildingHouse} mr={2} />
                 <span>Parque Luro, Mar del Plata, Buenos Aires, Argentina</span>
               </Flex>
               <Flex align="center">
