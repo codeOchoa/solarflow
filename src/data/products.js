@@ -699,4 +699,59 @@ const items = [{
         "../../../public/products/840w-rigid-solar-panels/installed-840w-rigid-solar-panels-with-brackets-back-side-view.webp"
     ]
 },
+
+
+
+
+
+{
+    id: 1,
+    title: "Panel Solar Monocristalino 400W",
+    description: "Alta eficiencia y durabilidad para maximizar *-la generación de energía solar.",
+    category: "solar-panels",
+    price: 250.00,
+    discountPercentage: 5.0,
+    rating: 4.8,
+    stock: 20,
+    tags: ["energy", "renewable", "solar"],
+    brand: "SolarTech",
+    sku: "PNS400M",
+    weight: 22.5,
+    dimensions: {
+        width: 100.0,
+        height: 200.0,
+        depth: 4.5
+    },
+    warrantyInformation: "10 años de garantía",
+    shippingInformation: "Envío en 5 días hábiles",
+    availabilityStatus: "In Stock",
+    reviews: [
+        {
+            rating: 5,
+            comment: "Excelente panel, alta eficiencia.",
+            date: "2024-12-01T10:00:00.000Z",
+            reviewerName: "Carlos Pérez",
+            reviewerEmail: "carlos.perez@example.com"
+        },
+        {
+            rating: 4,
+            comment: "Buen producto, pero el envío tardó más de lo esperado.",
+            date: "2024-11-20T08:00:00.000Z",
+            reviewerName: "Ana García",
+            reviewerEmail: "ana.garcia@example.com"
+        }
+    ],
+    returnPolicy: "30 días para devoluciones",
+    minimumOrderQuantity: 1,
+    meta: {
+        createdAt: "2024-11-01T08:00:00.000Z",
+        updatedAt: "2024-12-01T08:00:00.000Z",
+        barcode: "1234567890123",
+        qrCode: "https://example.com/qr-code.png"
+    },
+    images: [
+        "https://example.com/images/solar-panels/400w/1.png"
+    ],
+    thumbnail: "https://example.com/images/solar-panels/400w/thumbnail.png"
+}
 ];
