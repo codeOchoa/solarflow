@@ -2,7 +2,6 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { Layout } from "./layouts";
 import { PublicRouter } from "./router";
 import { CartProvider } from "./context";
-import { Footer } from "./components";
 
 function App() {
   return (
@@ -10,7 +9,6 @@ function App() {
       <ChakraProvider>
         <Layout>
           <PublicRouter />
-          <Footer />
         </Layout>
       </ChakraProvider>
     </CartProvider>

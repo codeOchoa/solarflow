@@ -8,9 +8,9 @@ export const NotFound = () => {
       justifyContent={"center"}
       flexDirection={"column"}
     >
-      <Heading>404 NotFound</Heading>
-      <Text>Parece que no encotramos la pagina solicitada</Text>
-      <Button>Volver al Home</Button>
+      <Heading>404 Not Found</Heading>
+      <Text>Parece que no encotramos la página solicitada</Text>
+      <Button>Volver al Inicio</Button>
     </Flex>
   );
 };

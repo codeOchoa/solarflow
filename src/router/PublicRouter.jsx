@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Category, Home, Item, NotFound } from "../pages";
-import { NavBar } from "../components";
+import { NavBar, Footer } from "../components";
 
 export const PublicRouter = () => {
   return (
@@ -12,6 +12,7 @@ export const PublicRouter = () => {
         <Route exact path="/category/:id" element={<Category />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };

@@ -30,10 +30,10 @@ export const NavBar = () => {
   return (
     <>
       <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
-        <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
+        <Flex h={16} alignItems={"center"} justifyContent={"space-between"} px={"5"}>
           <Box>
             <Link to="/">
-                <Text as="span" fontWeight="bold">Solar</Text>Flow
+                <Text as={"span"} fontSize={"2xl"}><Text as={"span"} fontWeight={"bold"}>Solar</Text>Flow</Text>
             </Link>
           </Box>
 
