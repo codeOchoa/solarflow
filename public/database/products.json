@@ -7,6 +7,7 @@
     "price": 49.99,
     "discountPercentage": 16.64,
     "rating": 4.84,
+    "isNew": true,
     "stock": 41,
     "tags": [
       "kitchen appliances",
@@ -61,6 +62,11 @@
     ],
     "thumbnail": "https://cdn.dummyjson.com/products/images/kitchen-accessories/Electric%20Stove/thumbnail.png"
   },
+
+
+
+
+  
   {
     "id": 99,
     "title": "Amazon Echo Plus",
