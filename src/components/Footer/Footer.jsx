@@ -8,7 +8,7 @@ import {
   VisuallyHidden,
   Input,
   IconButton,
-  useColorModeValue,
+  useColorModeValue
 } from '@chakra-ui/react'
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { BiMailSend } from 'react-icons/bi'
