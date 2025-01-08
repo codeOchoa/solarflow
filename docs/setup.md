@@ -49,7 +49,11 @@ Para desplegar el sitio en GitHub Pages, solo ejecuta:
 npm run deploy
 ```
 
-Instalacion en hosting Firebase Deploy:
+## Bugs
+
+Para acceder completamente al contenido del sitio web es necesario acceder al localStorage desde el modo desarrollador del navegador, crear una constante llamada "isUserConnected" y darle el valor booleano "true".
+
+## Firebase Deploy:
 
 npm install -g firebase-tools
 
@@ -71,7 +75,7 @@ firebase deploy
 
 ----------------
 
-package.json
+## package.json
 
 "scripts" retirados:
     "deploy": "gh-pages -d out"
@@ -87,5 +91,5 @@ package.json
     "autoprefixer": "^10.4.20",
     "gh-pages": "^6.2.0",
     "postcss": "^8.4.47",
-    "react-router-dom": "^6.27.0",
+    "react-router-dom": "^6.27.0", *este causa conflictos con el framework*
     "typescript": "^5"

@@ -1,7 +1,11 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { Flex } from "@chakra-ui/react";
-import { CiShoppingCart } from "react-icons/ci";
+import { 
+    Badge,
+    Box,
+    Flex,
+    HStack } from "@chakra-ui/react";
+import { LuShoppingCart } from "react-icons/lu";
 import { CartContext } from "../../context";
 
 export const CartWidget = () => {
@@ -12,12 +16,20 @@ export const CartWidget = () => {
         <Link to="/checkout">
             <Flex
                 alignItems={"center"}
-                marginRight={"30px"}
-                justifyContent={"space-between"}
-                width={"30px"}
-            >
-                <CiShoppingCart size={40} />
-                {totalItems}
+                justifyContent={"center"}
+                pt={"1.5"}>
+                <HStack spacing="2px">
+                    <Box display="flex" 
+                        alignItems="center" 
+                        justifyContent="center">
+                        <LuShoppingCart size={20} />
+                    </Box>
+                    <Badge rounded="full" 
+                        fontSize="0.8em" 
+                        colorScheme="red">
+                        {totalItems}
+                    </Badge>
+                </HStack>
             </Flex>
         </Link>
     );

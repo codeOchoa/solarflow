@@ -219,11 +219,11 @@ export const NavBar = () => {
                     justify={'flex-end'}
                     direction={'row'}
                     spacing={6}>
-                    <CartWidget />
                     <Stack direction={"row"} spacing={7}>
-                        <Button onClick={toggleColorMode}>
+                        {/* <Button onClick={toggleColorMode}>
                             {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-                        </Button>
+                        </Button> */}
+                        <CartWidget />
                         <Menu>
                             <MenuButton
                                 as={Button}
@@ -262,7 +262,7 @@ export const NavBar = () => {
                                     _hover={{ bg: useColorModeValue('#F2FFE9', 'gray.900') }}
                                     href={'#'}>Configuración</MenuItem>
                                 <MenuItem as={'a'}
-                                    display={{ base: 'none', md: 'inline-flex' }}
+                                    // display={{ base: 'none', md: 'inline-flex' }}
                                     fontSize={'sm'}
                                     fontWeight={400}
                                     _hover={{ bg: useColorModeValue('#F2FFE9', 'gray.900') }}
