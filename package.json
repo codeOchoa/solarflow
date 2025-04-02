@@ -1,0 +1,52 @@
+{
+    "name": "solarflow",
+    "version": "0.1.1",
+    "private": true,
+    "description": "Renewable Energy Store, contains item manager, authentication and database management with Firebase",
+    "keywords": [
+        "energy",
+        "solar",
+        "renewable",
+        "battery",
+        "auxiliary",
+        "converter",
+        "self-sustaining",
+        "maintenance"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/codeOchoa/solarflow.git"
+    },
+    "homepage": "https://github.com/codeOchoa/solarflow#readme",
+    "bugs": {
+        "url": "https://github.com/codeOchoa/solarflow/issues"
+    },
+    "license": "MIT",
+    "author": "codeOchoa",
+    "type": "module",
+    "main": "",
+    "directories": {
+        "doc": "docs"
+    },
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "firebase": "^11.6.0",
+        "flowbite": "^3.1.2",
+        "next": "15.2.4",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "react-icons": "^5.5.0"
+    },
+    "devDependencies": {
+        "@eslint/eslintrc": "^3",
+        "@tailwindcss/postcss": "^4",
+        "eslint": "^9",
+        "eslint-config-next": "15.2.4",
+        "tailwindcss": "^4"
+    }
+}
