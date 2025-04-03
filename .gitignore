@@ -25,17 +25,15 @@
 *.pem
 
 # temporary files
-/app/_zustand/*.ts
 /app/(dashboard)
-/app/actions
 /app/api
 /components/*.tsx
 /helpers
-/lib
 /prisma
 /public
 /server
-/utils
+/utils/*.ts
+/utils/*.tsx
 
 # merge legacy files
 /merge

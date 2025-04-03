@@ -65,8 +65,8 @@ export const useProductStore = create(
             },
         }),
         {
-            name: "products-storage", // Nombre único en el almacenamiento
-            storage: createJSONStorage(() => sessionStorage), // Por defecto usa localStorage
+            name: "products-storage", // Name of the item in the storage (must be unique)
+            storage: createJSONStorage(() => sessionStorage), // (optional) by default, 'localStorage' is used
         }
     )
 );

@@ -86,7 +86,7 @@ const CheckoutPage = () => {
                 return;
             }
 
-            // Enviando solicitud a la API para crear una orden
+            // Sending API request for creating a order
             fetch("http://localhost:3001/api/orders", {
                 method: "POST",
                 headers: {
@@ -111,6 +111,7 @@ const CheckoutPage = () => {
                 .then((res) => res.json())
                 .then((data) => {
                     const orderId = data.id;
+                    // for every product in the order we are calling addOrderProduct function that adds fields to the customer_order_product table
                     products.forEach((product) => {
                         addOrderProduct(orderId, product.id, product.amount);
                     });
@@ -145,7 +146,7 @@ const CheckoutPage = () => {
     };
 
     const addOrderProduct = async (orderId, productId, productQuantity) => {
-        // Enviando solicitud POST para la tabla de relación entre orden y producto
+        // Sending API POST request for the table customer_order_product that does many to many relatioship for order and product
         await fetch("http://localhost:3001/api/order-product", {
             method: "POST",
             headers: {

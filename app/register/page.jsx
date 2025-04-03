@@ -11,7 +11,7 @@ const RegisterPage = () => {
     const { data: session, status: sessionStatus } = useSession();
 
     useEffect(() => {
-        // Si el usuario ya está autenticado, redirigir a la página de inicio
+        // Chechking if user has already registered redirect to home page
         if (sessionStatus === "authenticated") {
             router.replace("/");
         }
@@ -47,7 +47,7 @@ const RegisterPage = () => {
         }
 
         try {
-            // Enviando solicitud a la API para registrar usuario
+            // Sending API request for registering user
             const res = await fetch("/api/register", {
                 method: "POST",
                 headers: {
