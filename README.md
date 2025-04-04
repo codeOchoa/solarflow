@@ -11,14 +11,15 @@ Tienda sobre Energías Renovables, contiene gestor de artículos, autentificaci�
 El objetivo de este proyecto es proporcionar una solución innovadora y centralizada para gestionar y optimizar los sistemas de energia solar. Nuestra solución es la de implementar una plataforma digital avanzada que permitirá a los usuarios supervisar en tiempo real el rendimiento de sus sistema solares, recibir notificaciones automaticas de fallos, integrar la red eléctrica tradicional y optimizar el uso de la energía almacenada, todo con herramientas personalizables para generar informes detallados y maximizar el ahorro energético.
 
 **Dependencias:**
-- firebase
-- flowbite
-- nanoid
-- next
-- next-auth
-- react
-- react-icons
-- zustand
+- firebase 11.6.0
+- flowbite-react 0.11.7
+- nanoid 5.1.5
+- next 15.2.4
+- next-auth 4.24.11
+- react 19.0.0
+- react-icons 5.5.0
+- react-hot-toast 2.5.2
+- zustand (borrando...)
 
 <!-- "dependencies": {
     "@headlessui/react": "^1.7.18",
@@ -29,15 +30,8 @@ El objetivo de este proyecto es proporcionar una solución innovadora y centrali
     "@types/react-slick": "^0.23.13",
     "bcryptjs": "^2.4.3",
     "express-fileupload": "^1.5.0",
-    "flowbite-react": "^0.7.2",
-    "nanoid": "^5.0.6",
-    "next": "14.1.0",
-    "next-auth": "^4.24.6",
-    "react": "^18",
     "react-apexcharts": "^1.4.1",
     "react-dom": "^18",
-    "react-hot-toast": "^2.4.1",
-    "react-icons": "^5.0.1",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
     "svgmap": "^2.10.1",
@@ -50,12 +44,8 @@ El objetivo de este proyecto es proporcionar una solución innovadora y centrali
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
     "daisyui": "^4.7.2",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.0",
     "postcss": "^8",
     "prisma": "^5.10.2",
-    "tailwindcss": "^3.3.0",
-    "typescript": "^5"
   } -->
 
 ## Documentacion:

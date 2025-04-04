@@ -29,11 +29,11 @@
 /app/api
 /components/*.tsx
 /helpers
+/lib
 /prisma
 /public
 /server
-/utils/*.ts
-/utils/*.tsx
+/utils
 
 # merge legacy files
 /merge
