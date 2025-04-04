@@ -5,7 +5,7 @@
 export { default as CategoryItem } from "./CategoryItem";
 export { default as CategoryMenu } from "./CategoryMenu";
 export { default as Incentives } from "./Incentives";
-// export { default as ProductItem } from "./ProductItem";
+export { default as ProductItem } from "./ProductItem";
 // export { default as ProductsSection } from "./ProductsSection";
 export { default as Newsletter } from "./Newsletter";
 // export { default as Footer } from "./Footer";
@@ -23,7 +23,7 @@ export { default as StockAvailabillity } from "./StockAvailabillity";
 export { default as SingleProductRating } from "./SingleProductRating";
 export { default as ProductTabs } from "./ProductTabs";
 export { default as RatingPercentElement } from "./RatingPercentElement";
-// export { default as SingleReview } from "./SingleReview";
+export { default as SingleReview } from "./SingleReview";
 export { default as CustomButton } from "./CustomButton";
 // export { default as QuantityInputCart } from "./QuantityInputCart";
 // export { default as AddToCartSingleProductBtn } from "./AddToCartSingleProductBtn";

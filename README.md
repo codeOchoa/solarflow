@@ -19,7 +19,7 @@ El objetivo de este proyecto es proporcionar una solución innovadora y centrali
 - react 19.0.0
 - react-icons 5.5.0
 - react-hot-toast 2.5.2
-- zustand (borrando...)
+- zustand 5.0.3
 
 <!-- "dependencies": {
     "@headlessui/react": "^1.7.18",
@@ -36,7 +36,6 @@ El objetivo de este proyecto es proporcionar una solución innovadora y centrali
     "slick-carousel": "^1.8.1",
     "svgmap": "^2.10.1",
     "zod": "^3.22.4",
-    "zustand": "^4.5.1"
   },
   "devDependencies": {
     "@types/node": "^20",
