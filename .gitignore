@@ -25,9 +25,8 @@
 *.pem
 
 # temporary files
-/app/(dashboard)
+/app/(dashboard)/*.tsx
 /app/api
-/components/*.tsx
 /helpers
 /lib
 /prisma
