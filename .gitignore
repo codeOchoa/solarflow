@@ -29,7 +29,6 @@
 /app/api
 /helpers
 /lib
-/prisma
 /public
 /server
 /utils
