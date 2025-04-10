@@ -10,16 +10,16 @@
 
 "use client";
 
-import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import React, { useEffect, useState } from "react";
+import { getAllOrders } from "@/utils/firebaseService";
 
 const AdminOrders = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
         const fetchOrders = async () => {
-            const response = await fetch("http://localhost:3001/api/orders");
-            const data = await response.json();
+            const data = await getAllOrders();
             setOrders(data);
         };
         fetchOrders();

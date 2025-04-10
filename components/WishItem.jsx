@@ -9,13 +9,15 @@
 // *********************
 
 "use client";
-import { useWishlistStore } from "@/app/_zustand/wishlistStore";
+
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
-import toast from "react-hot-toast";
-import { FaHeartCrack } from "react-icons/fa6";
 import { useSession } from "next-auth/react";
+import { FaHeartCrack } from "react-icons/fa6";
+import toast from "react-hot-toast";
+import { useWishlistStore } from "@/app/_zustand/wishlistStore";
+import { getUserByEmail, removeFromWishlist } from "@/utils/firebaseService";
 
 const WishItem = ({
     id,
@@ -26,7 +28,7 @@ const WishItem = ({
     stockAvailabillity,
 }) => {
     const { data: session } = useSession();
-    const { removeFromWishlist } = useWishlistStore();
+    const { removeFromWishlist: removeFromZustand } = useWishlistStore();
     const router = useRouter();
     const [userId, setUserId] = useState();
 
@@ -34,33 +36,25 @@ const WishItem = ({
         router.push(`/product/${slug}`);
     };
 
-    const getUserByEmail = async () => {
+    const getUser = async () => {
         if (session?.user?.email) {
-            fetch(`http://localhost:3001/api/users/email/${session.user.email}`, {
-                cache: "no-store",
-            })
-                .then((response) => response.json())
-                .then((data) => {
-                    setUserId(data?.id);
-                });
+            const user = await getUserByEmail(session.user.email);
+            setUserId(user?.id);
         }
     };
 
     const deleteItemFromWishlist = async (productId) => {
         if (userId) {
-            fetch(`http://localhost:3001/api/wishlist/${userId}/${productId}`, {
-                method: "DELETE",
-            }).then(() => {
-                removeFromWishlist(productId);
-                toast.success("Item removed from your wishlist");
-            });
+            await removeFromWishlist(userId, productId);
+            removeFromZustand(productId);
+            toast.success("Item removed from your wishlist");
         } else {
             toast.error("You need to be logged in to perform this action");
         }
     };
 
     useEffect(() => {
-        getUserByEmail();
+        getUser();
     }, [session?.user?.email]);
 
     return (

@@ -1,10 +1,12 @@
 "use client";
+
 import { DashboardSidebar } from "@/components";
 import { isValidEmailAddressFormat, isValidNameOrLastname } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
+import { getOrderById, getOrderProducts, updateOrder, deleteOrderById } from "@/utils/firebaseService";
 import toast from "react-hot-toast";
 
 const AdminSingleOrder = () => {
@@ -31,25 +33,15 @@ const AdminSingleOrder = () => {
     const router = useRouter();
 
     useEffect(() => {
-        const fetchOrderData = async () => {
-            const response = await fetch(
-                `http://localhost:3001/api/orders/${params?.id}`
-            );
-            const data = await response.json();
-            setOrder(data);
+        const fetchData = async () => {
+            const order = await getOrderById(orderId);
+            const allOrderProducts = await getOrderProducts();
+            const filtered = allOrderProducts.filter(p => p.orderId === orderId);
+            setOrder(order);
+            setOrderProducts(filtered);
         };
-
-        const fetchOrderProducts = async () => {
-            const response = await fetch(
-                `http://localhost:3001/api/order-product/${params?.id}`
-            );
-            const data = await response.json();
-            setOrderProducts(data);
-        };
-
-        fetchOrderData();
-        fetchOrderProducts();
-    }, [params?.id]);
+        fetchData();
+    }, [orderId]);
 
     const updateOrder = async () => {
         if (
@@ -79,45 +71,30 @@ const AdminSingleOrder = () => {
                 return;
             }
 
-            fetch(`http://localhost:3001/api/orders/${order?.id}`, {
-                method: "PUT",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(order),
-            })
-                .then((response) => {
-                    if (response.status === 200) {
-                        toast.success("Order updated successfuly");
-                    } else {
-                        throw Error("There was an error while updating a order");
-                    }
-                })
-                .catch(() =>
-                    toast.error("There was an error while updating a order")
-                );
+            try {
+                await updateOrderInFirebase(order?.id, order);
+                toast.success("Order updated successfully");
+            } catch (error) {
+                toast.error("There was an error while updating the order");
+                console.error(error);
+            }
         } else {
             toast.error("Please fill all fields");
         }
     };
 
     const deleteOrder = async () => {
-        const requestOptions = {
-            method: "DELETE",
-        };
+        const confirmed = window.confirm("Are you sure you want to delete this order?");
+        if (!confirmed) return;
 
-        fetch(
-            `http://localhost:3001/api/order-product/${order?.id}`,
-            requestOptions
-        ).then(() => {
-            fetch(
-                `http://localhost:3001/api/orders/${order?.id}`,
-                requestOptions
-            ).then(() => {
-                toast.success("Order deleted successfully");
-                router.push("/admin/orders");
-            });
-        });
+        try {
+            await deleteOrderById(order.id);
+            toast.success("Order deleted successfully");
+            router.push("/admin/orders");
+        } catch (error) {
+            toast.error("Error deleting order");
+            console.error(error);
+        }
     };
 
     return (

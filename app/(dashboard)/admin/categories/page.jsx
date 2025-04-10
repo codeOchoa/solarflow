@@ -1,9 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { CustomButton, DashboardSidebar } from "@/components";
 import { nanoid } from "nanoid";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { getAllCategories } from "@/utils/firebaseService";
 import { formatCategoryName } from "../../../../utils/categoryFormating";
 
 const DashboardCategory = () => {
@@ -11,11 +12,11 @@ const DashboardCategory = () => {
 
     // Getting all categories to be displayed on the all categories page
     useEffect(() => {
-        fetch("http://localhost:3001/api/categories")
-            .then((res) => res.json())
-            .then((data) => {
-                setCategories(data);
-            });
+        const fetchCategories = async () => {
+            const data = await getAllCategories();
+            setCategories(data);
+        };
+        fetchCategories();
     }, []);
 
     return (

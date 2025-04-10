@@ -8,14 +8,24 @@
 // Output: products grid
 // *********************
 
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import ProductItem from "./ProductItem";
 import Heading from "./Heading";
+import { getAllProducts } from "@/utils/firebaseService";
 
-const ProductsSection = async () => {
+const ProductsSection = () => {
     // Sending API request for getting all products
-    const data = await fetch("http://localhost:3001/api/products");
-    const products = await data.json();
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        const fetchProducts = async () => {
+            const data = await getAllProducts();
+            setProducts(data);
+        };
+        fetchProducts();
+    }, []);
 
     return (
         <div className="bg-blue-500 border-t-4 border-white">

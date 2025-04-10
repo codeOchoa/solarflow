@@ -1,47 +1,37 @@
 "use client";
-import { SectionTitle, WishItem } from "@/components";
+
 import React, { useEffect, useState } from "react";
+import { useSession } from "next-auth/react";
+import { SectionTitle, WishItem } from "@/components";
 import { useWishlistStore } from "../_zustand/wishlistStore";
 import { nanoid } from "nanoid";
-import { useSession } from "next-auth/react";
+import { getUserByEmail, getWishlistByUserId } from "@/utils/firebaseService";
 
 const WishlistPage = () => {
     const { data: session, status } = useSession();
     const { wishlist, setWishlist } = useWishlistStore();
 
-    const getWishlistByUserId = async (id) => {
-        const response = await fetch(`http://localhost:3001/api/wishlist/${id}`, {
-            cache: "no-store",
-        });
-        const wishlist = await response.json();
-
-        const productArray = wishlist.map((item) => ({
-            id: item?.product?.id,
-            title: item?.product?.title,
-            price: item?.product?.price,
-            image: item?.product?.mainImage,
-            slug: item?.product?.slug,
-            stockAvailabillity: item?.product?.inStock,
-        }));
-
-        setWishlist(productArray);
-    };
-
-    const getUserByEmail = async () => {
-        if (session?.user?.email) {
-            fetch(`http://localhost:3001/api/users/email/${session?.user?.email}`, {
-                cache: "no-store",
-            })
-                .then((response) => response.json())
-                .then((data) => {
-                    getWishlistByUserId(data?.id);
-                });
-        }
-    };
-
     useEffect(() => {
-        getUserByEmail();
-    }, [session?.user?.email, wishlist.length]);
+        const loadWishlist = async () => {
+            if (session?.user?.email) {
+                const user = await getUserByEmail(session.user.email);
+                if (user?.id) {
+                    const wishlistItems = await getWishlistByUserId(user.id);
+                    const productArray = wishlistItems.map((item) => ({
+                        id: item.productId, 
+                        title: item.title,
+                        price: item.price,
+                        image: item.image,
+                        slug: item.slug,
+                        stockAvailabillity: item.inStock,
+                    }));
+                    setWishlist(productArray);
+                }
+            }
+        };
+    
+        loadWishlist();
+    }, [session?.user?.email]);
 
     return (
         <div className="bg-white">

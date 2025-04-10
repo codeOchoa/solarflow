@@ -1,10 +1,12 @@
 "use client";
+
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import { SectionTitle } from "@/components";
 import { useProductStore } from "../_zustand/store";
-import Image from "next/image";
-import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
-import { useRouter } from "next/navigation";
+import { createOrder, createOrderProduct, createCheckout } from "@/utils/firebaseService";
 import {
     isValidCardNumber,
     isValidCreditCardCVVOrCVC,
@@ -86,13 +88,9 @@ const CheckoutPage = () => {
                 return;
             }
 
-            // Sending API request for creating a order
-            fetch("http://localhost:3001/api/orders", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
+            try {
+                // Sending API request for creating a order
+                const orderId = await createOrder({
                     name: checkoutForm.name,
                     lastname: checkoutForm.lastname,
                     phone: checkoutForm.phone,
@@ -101,45 +99,52 @@ const CheckoutPage = () => {
                     adress: checkoutForm.adress,
                     apartment: checkoutForm.apartment,
                     postalCode: checkoutForm.postalCode,
-                    status: "processing",
-                    total: total,
                     city: checkoutForm.city,
                     country: checkoutForm.country,
                     orderNotice: checkoutForm.orderNotice,
-                }),
-            })
-                .then((res) => res.json())
-                .then((data) => {
-                    const orderId = data.id;
-                    // for every product in the order we are calling addOrderProduct function that adds fields to the customer_order_product table
-                    products.forEach((product) => {
-                        addOrderProduct(orderId, product.id, product.amount);
-                    });
-                })
-                .then(() => {
-                    setCheckoutForm({
-                        name: "",
-                        lastname: "",
-                        phone: "",
-                        email: "",
-                        cardName: "",
-                        cardNumber: "",
-                        expirationDate: "",
-                        cvc: "",
-                        company: "",
-                        adress: "",
-                        apartment: "",
-                        city: "",
-                        country: "",
-                        postalCode: "",
-                        orderNotice: "",
-                    });
-                    clearCart();
-                    toast.success("Order created successfully");
-                    setTimeout(() => {
-                        router.push("/");
-                    }, 1000);
+                    total: total,
+                    status: "processing",
+                    createdAt: new Date().toISOString(),
                 });
+
+                // for every product in the order we are calling addOrderProduct function that adds fields to the customer_order_product table
+                await Promise.all(
+                    products.map((product) =>
+                        createOrderProduct({
+                            orderId,
+                            productId: product.id,
+                            quantity: product.amount,
+                        })
+                    )
+                );
+                setCheckoutForm({
+                    name: "",
+                    lastname: "",
+                    phone: "",
+                    email: "",
+                    cardName: "",
+                    cardNumber: "",
+                    expirationDate: "",
+                    cvc: "",
+                    company: "",
+                    adress: "",
+                    apartment: "",
+                    city: "",
+                    country: "",
+                    postalCode: "",
+                    orderNotice: "",
+                });
+
+                clearCart();
+                toast.success("Order created successfully");
+
+                setTimeout(() => {
+                    router.push("/");
+                }, 1000);
+            } catch (error) {
+                console.error("Error creating order:", error);
+                toast.error("There was an error while creating the order");
+            }
         } else {
             toast.error("You need to enter values in the input fields");
         }

@@ -1,6 +1,7 @@
 import { useSession } from "next-auth/react";
 import { getServerSession } from "next-auth/next";
 import { redirect } from "next/navigation";
+import { getAllUsers } from "@/utils/firebaseService";
 import toast from "react-hot-toast";
 
 export default async function Layout({ children }) {
@@ -12,8 +13,8 @@ export default async function Layout({ children }) {
 
     let email = session?.user?.email;
 
-    const res = await fetch(`http://localhost:3001/api/users/email/${email}`);
-    const data = await res.json();
+    const users = await getAllUsers();
+    const user = users.find((u) => u.email === email);
 
     // Redirecting user to the home page if not admin
     if (data.role === "user") {

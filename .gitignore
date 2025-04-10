@@ -27,11 +27,10 @@
 # temporary files
 /app/(dashboard)/*.tsx
 /app/api
-/helpers
+/docs
 /lib
 /public
 /server
-/utils
 
 # merge legacy files
 /merge

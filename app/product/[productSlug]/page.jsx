@@ -1,3 +1,6 @@
+import React from "react";
+import Image from "next/image";
+import { notFound } from "next/navigation";
 import {
     StockAvailabillity,
     UrgencyText,
@@ -6,19 +9,19 @@ import {
     SingleProductDynamicFields,
     AddToWishlistBtn,
 } from "@/components";
-import Image from "next/image";
-import { notFound } from "next/navigation";
-import React from "react";
 import { FaSquareFacebook, FaSquareXTwitter, FaSquarePinterest } from "react-icons/fa6";
+import { getProductBySlug } from "@/utils/firebaseService";
 
 const SingleProductPage = async ({ params }) => {
     // Sending API request for a single product with a given product slug
-    const data = await fetch(`http://localhost:3001/api/slugs/${params.productSlug}`);
-    const product = await data.json();
+    const product = await getProductBySlug(params.productSlug);
+
+    if (!product) {
+        notFound();
+    }
 
     // Sending API request for more than 1 product image if it exists
-    const imagesData = await fetch(`http://localhost:3001/api/images/${product.id}`);
-    const images = await imagesData.json();
+    const images = product.images || [];
 
     if (!product || product.error) {
         notFound();

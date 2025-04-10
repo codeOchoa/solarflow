@@ -3,6 +3,7 @@ import { DashboardSidebar } from "@/components";
 import { convertCategoryNameToURLFriendly as convertSlugToURLFriendly } from "@/utils/categoryFormating";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import { createProduct, getAllCategories } from "@/utils/firebaseService";
 import toast from "react-hot-toast";
 
 const AddNewProduct = () => {
@@ -23,42 +24,30 @@ const AddNewProduct = () => {
         if (
             product.title === "" ||
             product.manufacturer === "" ||
-            product.description == "" ||
+            product.description === "" ||
             product.slug === ""
         ) {
             toast.error("Please enter values in input fields");
             return;
         }
 
-        const requestOptions = {
-            method: "post",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(product),
-        };
-        fetch(`http://localhost:3001/api/products`, requestOptions)
-            .then((response) => {
-                if (response.status === 201) {
-                    return response.json();
-                } else {
-                    throw Error("There was an error while creating product");
-                }
-            })
-            .then((data) => {
-                toast.success("Product added successfully");
-                setProduct({
-                    title: "",
-                    price: 0,
-                    manufacturer: "",
-                    inStock: 1,
-                    mainImage: "",
-                    description: "",
-                    slug: "",
-                    categoryId: "",
-                });
-            })
-            .catch((error) => {
-                toast.error("There was an error while creating product");
+        try {
+            await createProduct(product);
+            toast.success("Product added successfully");
+            setProduct({
+                title: "",
+                price: 0,
+                manufacturer: "",
+                inStock: 1,
+                mainImage: "",
+                description: "",
+                slug: "",
+                categoryId: "",
             });
+        } catch (error) {
+            toast.error("There was an error while creating product");
+            console.error(error);
+        }
     };
 
     const uploadFile = async (file) => {
@@ -82,15 +71,12 @@ const AddNewProduct = () => {
     };
 
     const fetchCategories = async () => {
-        fetch(`http://localhost:3001/api/categories`)
-            .then((res) => res.json())
-            .then((data) => {
-                setCategories(data);
-                setProduct((prev) => ({
-                    ...prev,
-                    categoryId: data[0]?.id || "",
-                }));
-            });
+        const data = await getAllCategories();
+        setCategories(data);
+        setProduct((prev) => ({
+            ...prev,
+            categoryId: data[0]?.id || "",
+        }));
     };
 
     useEffect(() => {
