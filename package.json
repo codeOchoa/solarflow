@@ -1,8 +1,8 @@
 {
     "name": "solarflow",
-    "version": "0.1.1",
+    "version": "0.1.6",
     "private": true,
-    "description": "Renewable Energy Store, contains item manager, authentication and database management with Firebase",
+    "description": "Solar eCommerce Platform",
     "keywords": [
         "energy",
         "solar",
@@ -23,7 +23,6 @@
     },
     "license": "MIT",
     "author": "codeOchoa",
-    "type": "module",
     "main": "",
     "directories": {
         "doc": "docs"
@@ -38,7 +37,6 @@
         "apexcharts": "^4.5.0",
         "bcryptjs": "^3.0.2",
         "cors": "^2.8.5",
-        "daisyui": "^5.0.16",
         "express": "^5.1.0",
         "express-fileupload": "^1.5.1",
         "firebase": "^11.6.0",
@@ -57,9 +55,12 @@
     },
     "devDependencies": {
         "@eslint/eslintrc": "^3",
-        "@tailwindcss/postcss": "^4",
+        "@tailwindcss/postcss": "^4.1.4",
+        "autoprefixer": "^10.4.21",
+        "daisyui": "^5.0.27",
         "eslint": "^9",
         "eslint-config-next": "15.2.4",
-        "tailwindcss": "^4"
+        "postcss": "^8.5.3",
+        "tailwindcss": "^4.1.4"
     }
 }

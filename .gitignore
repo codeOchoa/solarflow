@@ -28,7 +28,6 @@
 /app/(dashboard)/*.tsx
 /app/api
 /docs
-/lib
 /public
 /server
 

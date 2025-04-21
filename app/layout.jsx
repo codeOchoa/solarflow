@@ -1,19 +1,22 @@
-import { Inter } from "next/font/google";
+import { Josefin_Sans } from "next/font/google";
+import { getServerSession } from "next-auth";
 import "./globals.css";
 import { Footer, Header } from "@/components";
 import SessionProvider from "@/utils/SessionProvider";
 import Providers from "@/Providers";
-import { getServerSession } from "next-auth";
 
-const inter = Inter({ subsets: ["latin"] });
+const josefin = Josefin_Sans({
+    subsets: ['latin'],
+    weight: ['400', '500', '600', '700'],
+});
 
 export const metadata = {
     title: "SolarFlow",
-    description: "Renewable Energy Store, contains item manager, authentication and database management with Firebase",
+    description: "Solar eCommerce Platform",
     keywords: ['energy', 'solar', 'renewable', 'battery', 'auxiliary', 'converter', 'self-sustaining', 'maintenance'],
     openGraph: {
         title: "SolarFlow",
-        description: "Renewable Energy Store, contains item manager, authentication and database management with Firebase",
+        description: "Solar eCommerce Platform",
         url: "https://solarflow.vercel.app/",
         siteName: "SolarFlow",
         type: "website",
@@ -21,8 +24,8 @@ export const metadata = {
         authors: ['codeOchoa'],
     },
     icons: {
-        icon: "/favicons/LogoTitulo.svg",
-        shortcut: "/favicon.ico",
+        icon: "/favicons/LogoSF.svg",
+        shortcut: "/LogoSF.svg",
     },
 };
 
@@ -31,7 +34,7 @@ export default async function RootLayout({ children }) {
 
     return (
         <html lang="en" data-theme="light">
-            <body className={inter.className}>
+            <body className={josefin.className}>
                 <SessionProvider session={session}>
                     <Header />
                     <Providers>

@@ -10,32 +10,22 @@
 
 "use client";
 
-import { nanoid } from "nanoid";
 import React from "react";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
-const ProductItemRating = ({ productRating }) => {
-  // Setting rating with all empty stars by default
-  const rating = ["empty star", "empty star", "empty star", "empty star", "empty star"];
-
-  // Going through product rating and modifying rating state
-  for (let i = 0; i < productRating; i++) {
-    rating[i] = "full star";
-  }
-
-  return (
-    <div className="flex">
-      {rating.map((singleRating) => (
-        <div key={nanoid()}>
-          {singleRating === "full star" ? (
-            <AiFillStar className="text-yellow-400 text-xl" />
-          ) : (
-            <AiOutlineStar className="text-yellow-400 text-xl" />
-          )}
+const ProductItemRating = ({ rating }) => {
+    return (
+        <div className="flex text-sm text-yellow-400">
+            {[...Array(5)].map((_, i) =>
+                i < rating ? (
+                    <AiFillStar key={i} />  // className="text-yellow-400 text-xl"
+                ) : (
+                    <AiOutlineStar key={i} />   // className="text-yellow-400 text-xl"
+                )
+            )}
         </div>
-      ))}
-    </div>
-  );
+    );
 };
+
 
 export default ProductItemRating;
