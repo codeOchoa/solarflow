@@ -14,7 +14,7 @@ import { nanoid } from "nanoid";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import CustomButton from "./CustomButton";
+import CustomButton from "./ui/CustomButton";
 
 const DashboardProductTable = () => {
     const [products, setProducts] = useState([]);

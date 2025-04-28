@@ -1,5 +1,12 @@
 @import "tailwindcss";
 @plugin "daisyui";
+@theme {
+    --color-ccfirst: #233d4d;
+    --color-ccsecond: #fe7f2d;
+    --color-ccthird: #fcca46;
+    --color-ccfourth: #a1c181;
+    --color-ccfifth: #619b8a;
+  }
 
 .range {
     --range-shdw: #3B82F6;

@@ -11,7 +11,7 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import ProductItemRating from "./ProductItemRating";
+import ProductItemRating from "./ui/ProductItemRating";
 
 const ProductItem = ({ product, color }) => {
     return (

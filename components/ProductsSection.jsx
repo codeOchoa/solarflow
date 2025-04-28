@@ -12,7 +12,7 @@
 
 import React, { useEffect, useState } from "react";
 import ProductItem from "./ProductItem";
-import Heading from "./Heading";
+import Heading from "./ui/Heading";
 import { getAllProducts } from "@/utils/firebaseService";
 
 const ProductsSection = () => {

@@ -1,7 +1,7 @@
 import { Josefin_Sans } from "next/font/google";
 import { getServerSession } from "next-auth";
 import "./globals.css";
-import { Footer, Header } from "@/components";
+import { FloatingChatWidget, Footer, Header, Navbar } from "@/components";
 import SessionProvider from "@/utils/SessionProvider";
 import Providers from "@/Providers";
 
@@ -36,9 +36,11 @@ export default async function RootLayout({ children }) {
         <html lang="en" data-theme="light">
             <body className={josefin.className}>
                 <SessionProvider session={session}>
-                    <Header />
+                    <Navbar />
+                    {/* <Header /> */}
                     <Providers>
                         {children}
+                        <FloatingChatWidget />
                     </Providers>
                     <Footer />
                 </SessionProvider>

@@ -11,7 +11,7 @@
 import React from "react";
 import CategoryItem from "./CategoryItem";
 import { categoryMenuList } from "@/lib/utils";
-import Heading from "./Heading";
+import Heading from "./ui/Heading";
 
 const CategoryMenu = () => {
     return (

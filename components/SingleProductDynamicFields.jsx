@@ -10,7 +10,7 @@
 
 "use client";
 import React, { useState } from "react";
-import QuantityInput from "./QuantityInput";
+import QuantityInput from "./ui/QuantityInput";
 import AddToCartSingleProductBtn from "./AddToCartSingleProductBtn";
 import BuyNowSingleProductBtn from "./BuyNowSingleProductBtn";
 
